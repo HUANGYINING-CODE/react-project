@@ -137,7 +137,7 @@ a {
 
 body {
     font-family: 'LXGW WenKai Mono TC';
-    font-weight:100;
+    font-weight: 100;
     line-height: 1.5;
     letter-spacing: 2px;
 }
@@ -174,8 +174,8 @@ body *:lang(en) {
 }
 
 .nav ul li img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -205,29 +205,30 @@ body *:lang(en) {
     text-align: center;
     z-index: 1;
     overflow: hidden;
-  }
-  
-  .hero-arc-background {
+}
+
+.hero-arc-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 800px;
-    background: url('./public/image/background-dark1.png') ; /*圖請再壓縮到2mb*/
-    background-position:center;
+    background: url('./public/image/background-dark1.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border-bottom-left-radius: 100% 40%;
     border-bottom-right-radius: 100% 40%;
     z-index: 1;
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     position: relative;
     z-index: 2;
     color: white;
     margin-top: -100px;
     max-width: 700px;
-  }
+}
 
 
 .hero-title {
@@ -236,7 +237,7 @@ body *:lang(en) {
     margin-bottom: 30px;
     font-weight: SemiBold;
     letter-spacing: 2px;
-    font-style: italic; 
+    font-style: italic;
 }
 
 .hero-subtitle {
@@ -246,8 +247,9 @@ body *:lang(en) {
 
 .hero-description {
     font-family: 'Noto Sans TC';
-    font-size: 16px;
-    max-width: 620px;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 680px;
     margin: 0 auto;
     line-height: 1.8;
 }
@@ -296,13 +298,13 @@ body *:lang(en) {
 .text .title {
     font-size: 24px;
     margin-bottom: 20px;
-    color:#8750BF;
+    color: #8750BF;
 }
 
 .text-content p,
 .text-content ul {
     font-family: 'Noto Sans TC';
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2;
     text-align: left;
     margin-top: 20px;
@@ -335,10 +337,11 @@ body *:lang(en) {
 
 /* Footer */
 .footer {
+    border-radius: 60px 60px 0 0;
     background-image: url('./public/image/footer背景.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding: 60px 20px 20px;
     margin-top: 60px;
 }
@@ -359,23 +362,26 @@ body *:lang(en) {
 
 
 .footer h3 {
-    color: #666;
+    color: white;
+    font-family: 'Lora', 'Georgia', serif;
     font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
     margin-bottom: 15px;
 }
 
 .footer ul li {
-    color: #666;
+    color: white;
     margin-bottom: 10px;
 }
 
 .footer ul li a {
-    color: #666;
+    color: white;
     font-size: 14px;
 }
 
 .contact p {
-    color: #666;
+    color: white;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -387,15 +393,17 @@ body *:lang(en) {
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
 }
 
 /* Footer 最下方版權 */
 .copyright {
+    font-family: 'Lora', 'Georgia', serif;
+    font-style: italic;
     text-align: center;
     font-size: 14px;
-    color: #999;
+    color: white;
     margin-top: 40px;
 }
 
