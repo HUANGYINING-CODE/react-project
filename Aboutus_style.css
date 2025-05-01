@@ -178,6 +178,8 @@ body *:lang(en) {
     height: 24px;
 }
 
+
+
 .background-overlay {
     position: fixed;
     top: 0;
@@ -195,27 +197,37 @@ body *:lang(en) {
 /* --------- Hero --------- */
 .hero {
     position: relative;
-    min-height: 600px;
+    min-height: 800px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    text-align: center;
     padding: 0 20px;
-    background-image: url('./public/image/aboutus_background-dark1.png');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    text-align: center;
     z-index: 1;
-}
-
-
-.hero-content {
+    overflow: hidden;
+  }
+  
+  .hero-arc-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: url('./public/image/background-dark1.png') ; /*圖請再壓縮到2mb*/
+    background-position:center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100% 40%;
+    border-bottom-right-radius: 100% 40%;
+    z-index: 1;
+  }
+  
+  .hero-content {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     color: white;
-}
+    margin-top: -100px;
+    max-width: 700px;
+  }
 
 
 .hero-title {
@@ -325,6 +337,8 @@ body *:lang(en) {
 .footer {
     background-image: url('./public/image/footer背景.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     padding: 60px 20px 20px;
     margin-top: 60px;
 }
