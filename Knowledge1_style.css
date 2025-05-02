@@ -196,7 +196,8 @@ ol {
     margin-top: -100px;
     position: relative;
     z-index: 1;
-    gap: 100px;
+    gap: 100px;   
+    overflow: hidden;
 }
 
 .dimand1 {
@@ -257,6 +258,7 @@ ol {
     min-height: auto;
     color: #3B394F;
     font-family: 'Noto Sans TC';
+ 
 }
 
 .moon-title {
