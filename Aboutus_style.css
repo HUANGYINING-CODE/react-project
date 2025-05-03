@@ -211,7 +211,6 @@ body *:lang(en) {
 .hero-arc-background {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 800px;
     background: url('./public/image/background-dark1.png');
