@@ -464,3 +464,119 @@ body {
     color: white;
     margin-top: 40px;
 }
+
+
+/* 1024px 平板樣式 */
+@media screen and (max-width: 1024px) {
+    .category {
+      flex-wrap: wrap;
+      gap: 40px;
+      font-size: 14px;
+      margin: 100px auto 0;
+      padding: 0 20px;
+    }
+  
+    .crystal h1 {
+      font-size: 100px;
+    }
+  
+    .crystal-img {
+      gap: 120px;
+      margin-top: 180px;
+    }
+  
+    .part1,
+    .p2p3,
+    .recommended-crystals {
+      padding: 30px 20px;
+    }
+  
+    .p2p3 {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+  
+    .p2p3 h2 {
+      width: 100%;
+      font-size: 20px;
+    }
+  
+    .recommended-crystals img {
+      width: 40px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-content > div {
+      text-align: center;
+      max-width: none;
+    }
+  
+    .arc-background {
+      border-top-left-radius: 200% 100%;
+      border-top-right-radius: 200% 100%;
+    }
+  }
+  
+  /* 手機版 RWD */
+  @media screen and (max-width: 768px) {
+    .category {
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 13px;
+      margin-top: 80px;
+    }
+  
+    .crystal h1 {
+      font-size: 72px;
+    }
+  
+    .crystal-img {
+      gap: 60px;
+      margin-top: 140px;
+    }
+  
+    .part1 {
+      padding: 20px 16px;
+    }
+  
+    .p2p3 {
+      padding: 20px 16px;
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .p2p3 h2 {
+      font-size: 18px;
+    }
+  
+    .recommended-crystals {
+      margin: 30px auto;
+      font-size: 18px;
+    }
+  
+    .recommended-crystals img {
+      width: 36px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .footer-content > div {
+      text-align: center;
+    }
+  
+    .arc-background {
+      border-top-left-radius: 250% 120%;
+      border-top-right-radius: 250% 120%;
+    }
+  }
+  
