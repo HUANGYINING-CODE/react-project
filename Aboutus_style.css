@@ -399,6 +399,33 @@ body *:lang(en) {
     height: 48px;
 }
 
+/* 預設圖 */
+.social-icons a:nth-child(1) img {
+    content: url('./public/image/icon/sns-line-state-default.svg');
+}
+
+.social-icons a:nth-child(2) img {
+    content: url('./public/image/icon/sns-ig-state-default.svg');
+}
+
+.social-icons a:nth-child(3) img {
+    content: url('./public/image/icon/sns-fb-state-default.svg');
+}
+
+/* hover */
+.social-icons a:nth-child(1):hover img {
+    content: url('./public/image/icon/sns-line-state-hover.svg');
+}
+
+.social-icons a:nth-child(2):hover img {
+    content: url('./public/image/icon/sns-ig-state-hover.svg');
+}
+
+.social-icons a:nth-child(3):hover img {
+    content: url('./public/image/icon/sns-fb-state-hover.svg');
+}
+
+
 /* 版權 */
 .copyright {
     font-family: 'Noto Sans TC';

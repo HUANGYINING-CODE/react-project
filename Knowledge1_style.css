@@ -131,9 +131,9 @@ ol {
     height: 70px;
     z-index: 999;
     padding: 0;
-  }
-  
-  .header-background {
+}
+
+.header-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,17 +143,17 @@ ol {
     background-size: cover;
     z-index: 1;
     pointer-events: none;
-  }
-  
-  .header-inner {
+}
+
+.header-inner {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 0 50px;
-  }
+}
 
 .logo img {
     width: 180px;
@@ -350,6 +350,33 @@ ol {
     width: 48px;
     height: 48px;
 }
+
+/* 預設圖 */
+.social-icons a:nth-child(1) img {
+    content: url('./public/image/icon/sns-line-state-default.svg');
+}
+
+.social-icons a:nth-child(2) img {
+    content: url('./public/image/icon/sns-ig-state-default.svg');
+}
+
+.social-icons a:nth-child(3) img {
+    content: url('./public/image/icon/sns-fb-state-default.svg');
+}
+
+/* hover */
+.social-icons a:nth-child(1):hover img {
+    content: url('./public/image/icon/sns-line-state-hover.svg');
+}
+
+.social-icons a:nth-child(2):hover img {
+    content: url('./public/image/icon/sns-ig-state-hover.svg');
+}
+
+.social-icons a:nth-child(3):hover img {
+    content: url('./public/image/icon/sns-fb-state-hover.svg');
+}
+
 
 .copyright {
     font-family: 'Noto Sans TC';

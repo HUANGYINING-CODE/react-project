@@ -93,8 +93,8 @@ video {
 }
 
 body {
-    font-family: 'LXGW WenKai Mono TC';
-    font-weight: 100;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
     line-height: 1.5;
     letter-spacing: 2px;
     color: black;
@@ -131,9 +131,9 @@ ol {
     height: 70px;
     z-index: 999;
     padding: 0;
-  }
-  
-  .header-background {
+}
+
+.header-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,17 +143,17 @@ ol {
     background-size: cover;
     z-index: 1;
     pointer-events: none;
-  }
-  
-  .header-inner {
+}
+
+.header-inner {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 0 50px;
-  }
+}
 
 .logo img {
     width: 180px;
@@ -171,62 +171,102 @@ ol {
 }
 
 
-html, body {
+html,
+body {
+    position: relative;
     height: 100%;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-  }
+    z-index: 0;
+}
 
- 
-/* 主要內容 */
-.main {
-  flex: 1;
-  height: 1000px;
-  position: relative;
-  z-index: 2;
-} 
+/* 內容 */
+.category {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-weight: 450;
+    color: #A78DBB;
+}
+
+.category li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.category li:hover {
+    border: 2px solid #A78DBB;
+    background-color: rgba(167, 141, 187, 0.1);
+}
+
+.h1 {
+    font-family: 'Lora', 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+
+.arc-inner-content {
+    position: relative;
+    z-index: 3;
+    padding: 60px 20px;
+    color: white;
+}
+
 
 /* 背景 */
 .background-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./public/image/背景材質.png');
     background-size: cover;
-    background-position: center;
     background-repeat: repeat;
     z-index: 2;
     pointer-events: none;
 }
 
-.arc-background {
-    position: absolute;
-    background-position: center;
-    bottom: 0;
+
+.arc-wrapper {
+    position: relative;
     width: 100%;
-    height: 1000px;
-    background: url('./public/image/Knowledge2_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    border-top-left-radius: 100% 70%;
-    border-top-right-radius: 100% 70%;
-
+    height: auto;
+    overflow: hidden;
     z-index: 1;
-    pointer-events: none;
+    display: flex;
+    flex-direction: column;
 }
 
+.arc-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./public/image/Knowledge2_background.png') no-repeat center;
+    background-size: cover;
+    border-top-left-radius: 100% 80%;
+    border-top-right-radius: 100% 80%;
+    pointer-events: none;
+    z-index: 1;
+}
 
 
 
 /* Footer */
 .footer {
-    z-index: 3;
-    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 40px 20px 30px;
+    background: transparent;
 }
 
 .footer-content {
@@ -279,6 +319,33 @@ html, body {
     width: 48px;
     height: 48px;
 }
+
+/* 預設圖 */
+.social-icons a:nth-child(1) img {
+    content: url('./public/image/icon/sns-line-state-default.svg');
+}
+
+.social-icons a:nth-child(2) img {
+    content: url('./public/image/icon/sns-ig-state-default.svg');
+}
+
+.social-icons a:nth-child(3) img {
+    content: url('./public/image/icon/sns-fb-state-default.svg');
+}
+
+/* hover */
+.social-icons a:nth-child(1):hover img {
+    content: url('./public/image/icon/sns-line-state-hover.svg');
+}
+
+.social-icons a:nth-child(2):hover img {
+    content: url('./public/image/icon/sns-ig-state-hover.svg');
+}
+
+.social-icons a:nth-child(3):hover img {
+    content: url('./public/image/icon/sns-fb-state-hover.svg');
+}
+
 
 .copyright {
     font-family: 'Noto Sans TC';
