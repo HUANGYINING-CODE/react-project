@@ -154,7 +154,8 @@ body *:lang(en) {
     justify-content: space-between;
     align-items: center;
     padding: 18px 50px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(1px);
     position: fixed;
     top: 0;
     left: 0;
@@ -217,8 +218,8 @@ body *:lang(en) {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 100% 40%;
-    border-bottom-right-radius: 100% 40%;
+    border-bottom-left-radius: 100% 70%;
+    border-bottom-right-radius: 100% 70%;
     z-index: 1;
 }
 
@@ -357,16 +358,17 @@ body *:lang(en) {
     flex: 1 1 200px;
     max-width: 300px;
     text-align: left;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
 }
 
 
 
 .footer h3 {
     color: white;
-    font-family: 'Lora', 'Georgia', serif;
+    font-family: 'Noto Sans TC';
     font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -392,16 +394,20 @@ body *:lang(en) {
     margin-top: 10px;
 }
 
+
 .social-icons img {
     width: 48px;
     height: 48px;
 }
 
-/* Footer 最下方版權 */
+/* 版權 */
 .copyright {
-    font-family: 'Lora', 'Georgia', serif;
-    font-style: italic;
-    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     font-size: 14px;
     color: white;
     margin-top: 40px;

@@ -123,19 +123,6 @@ ol {
 }
 
 /* Header */
-.header-background {
-    position: relative;
-    background-position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background: url('./public/image/navbar_background.png') no-repeat center;
-    background-size: cover;
-    z-index: 10;
-    pointer-events: none;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -143,19 +130,32 @@ ol {
     width: 100%;
     height: 70px;
     z-index: 999;
-    padding: 18px 50px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-}
-
-.header-inner {
-    position: relative;
+    padding: 0;
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: url('./public/image/navbar_background.png') no-repeat center;
+    background-size: cover;
     z-index: 1;
+    pointer-events: none;
+  }
+  
+  .header-inner {
+    position: relative;
+    z-index: 2; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 0 50px;
-}
+    backdrop-filter: blur(1px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
+  }
 
 .logo img {
     width: 180px;
@@ -196,19 +196,20 @@ ol {
     margin-top: -100px;
     position: relative;
     z-index: 1;
-    gap: 100px;   
+    gap: 100px;
     overflow: hidden;
 }
 
 .dimand1 {
     transform: rotate(20deg) translate(100px, 35px);
-    width: 30px; 
-  }
-  
-  .dimand2 {
+    width: 30px;
+}
+
+.dimand2 {
     transform: rotate(-20deg) translate(-80px, -20px);
     width: 60px;
-  }
+}
+
 .left-title {
     flex: 1;
     writing-mode: vertical-rl;
@@ -258,7 +259,7 @@ ol {
     min-height: auto;
     color: #3B394F;
     font-family: 'Noto Sans TC';
- 
+
 }
 
 .moon-title {
@@ -312,14 +313,15 @@ ol {
     flex: 1 1 200px;
     max-width: 300px;
     text-align: left;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
 }
 
 .footer h3 {
     color: white;
-    font-family: 'Lora', 'Georgia', serif;
+    font-family: 'Noto Sans TC';
     font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -345,15 +347,19 @@ ol {
     margin-top: 10px;
 }
 
+
 .social-icons img {
     width: 48px;
     height: 48px;
 }
 
 .copyright {
-    font-family: 'Lora', 'Georgia', serif;
-    font-style: italic;
-    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     font-size: 14px;
     color: white;
     margin-top: 40px;
