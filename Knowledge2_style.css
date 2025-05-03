@@ -1,0 +1,410 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'LXGW WenKai Mono TC';
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: black;
+}
+
+body *:lang(en) {
+    font-family: 'Lora', 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    padding: 0;
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: url('./public/image/navbar_background.png') no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .header-inner {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+  }
+
+.logo img {
+    width: 180px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 背景 */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./public/image/knowledge1-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 主要內容 */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px 60px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.dimand1 {
+    transform: rotate(20deg) translate(100px, 35px);
+    width: 30px;
+}
+
+.dimand2 {
+    transform: rotate(-20deg) translate(-80px, -20px);
+    width: 60px;
+}
+
+.left-title {
+    flex: 1;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-family: 'LXGW WenKai Mono TC';
+}
+
+.right-content {
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    z-index: 2;
+}
+
+.moon-bg {
+    position: absolute;
+    top: -400px;
+    right: -150px;
+    width: 1150px;
+    height: 1150px;
+    background-image: url('./public/image/knowledge1-moon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.moon-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 600px;
+    min-height: auto;
+    color: #3B394F;
+    font-family: 'Noto Sans TC';
+
+}
+
+.moon-title {
+    color: #5A4D9C;
+    font-family: 'LXGW WenKai Mono TC';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ol-moon-list,
+.ul-moon-list {
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 16px;
+    color: #3B394F;
+    padding-left: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.ol-moon-list {
+    list-style-type: decimal;
+}
+
+.ul-moon-list {
+    list-style-type: disc;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    border-radius: 60px 60px 0 0;
+    background-image: url('./public/image/footer背景.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+    z-index: 3;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-content>div {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+}
+
+.footer h3 {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.contact p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+}
+
+.copyright {
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* RWD  未完成*/
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .left-title {
+        writing-mode: horizontal-tb;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+    }
+
+    .right-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moon-bg {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        right: 0;
+        background-size: cover;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content>div {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .footer h3,
+    .footer ul li a,
+    .contact p {
+        text-align: center;
+    }
+}
