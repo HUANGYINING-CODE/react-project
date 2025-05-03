@@ -153,8 +153,6 @@ ol {
     align-items: center;
     height: 100%;
     padding: 0 50px;
-    backdrop-filter: blur(1px);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
   }
 
 .logo img {
