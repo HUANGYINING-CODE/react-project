@@ -36,7 +36,6 @@ body {
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
     line-height: 1.5;
-    /* color: var(--color-black); */
 }
 
 /* 重置標題 */
@@ -58,8 +57,6 @@ img {
 /* 重置連接 */
 a {
     display: block;
-    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
-    /* color: var(--color-deep); */
     text-decoration: none;
 }
 
@@ -129,8 +126,6 @@ a {
 
 /* 第一個標題區 */
 #title-1{
-    /* width: 483.87px;
-    height: 42px; */
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -155,7 +150,6 @@ a {
 #title-2{
     font-family: "LXGW WenKai Mono TC";
     font-size: 36px;
-    /* line-height: 54px; */
     letter-spacing: 3.6px;
     color: #8750BF;
     height: 126px;
@@ -163,13 +157,11 @@ a {
 
 /* 填入西元出生年月日區 */
 #date{
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 69px; /* 加大欄位之間的距離 */
     margin-bottom: 89.79px; /* 跟下方按鈕保留空間 */
-
 }
 /* yyyy區/dd區/mm區 */
 .date-enter{
@@ -183,30 +175,23 @@ a {
 }
 /* yyyy/dd/mm */
 .date-enter span {
-    /* background-color: aqua; */
     color: rgba(0, 0, 0, 0.24);
     font-family: "Noto Sans TC";
     font-size: 36px;
     line-height: 59.76px;
     letter-spacing: 7.20px;
-    /* margin-bottom: 8px; */
 }
 /* 選擇鈕 */
 .date-button {
-    /* background-color: coral; */
     height: 30px;
     width: 31.46px;
     cursor: pointer;
-    /* margin-bottom: 15px; */
-    /* margin-left: 20px; */
 }
 /* 日曆button */
 .calendar {
-    /* background-color: yellowgreen; */
     height: 40px;
     width: 36px;
     cursor: pointer;
-    /* margin-left: 60px; */
 }
 
 

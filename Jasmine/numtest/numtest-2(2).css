@@ -36,7 +36,6 @@ body {
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
     line-height: 1.5;
-    /* color: var(--color-black); */
 }
 
 /* 重置標題 */
@@ -58,8 +57,6 @@ img {
 /* 重置連接 */
 a {
     display: block;
-    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
-    /* color: var(--color-deep); */
     text-decoration: none;
 }
 
@@ -129,8 +126,6 @@ a {
 
 /* 第一個標題區 */
 #title-1{
-    /* width: 483.87px;
-    height: 42px; */
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -157,7 +152,6 @@ a {
     font-size: 36px;
     letter-spacing: 3.6px;
     color: #8750BF;
-    /* margin-bottom: 70px;  */
 }
 
 /* 填入西元出生年月日 */
@@ -176,7 +170,6 @@ a {
     padding: 0 20px; /* 增加內邊距 */
     border: 1px solid rgba(0, 0, 0, 0.24);; /* 邊框顏色 */
     border-radius: 5px; /* 圓角邊框 */
-    /* box-sizing: border-box; 使內邊距和邊框包含在寬度內 */
     text-align: center; /* 讓文字居中對齊 */
     line-height: 40px; /* 使文字垂直居中 */
     letter-spacing: 5px;
