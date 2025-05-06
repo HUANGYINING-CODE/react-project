@@ -1,0 +1,486 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    /*不累加邊框及內距*/
+}
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    /* color: var(--color-black); */
+}
+
+/* 重置標題 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
+    /* color: var(--color-deep); */
+    text-decoration: none;
+}
+
+/* 導覽列 */
+#navbar{
+    background-image: 
+        linear-gradient(107deg, rgba(162, 105, 232, 0.97) -19.31%, rgba(66, 73, 212, 0.97) 169.85%),
+        url(../images/backgroundmaterial.jpg);
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+/* logo */
+#navbar .logo img {
+    height: 46px;
+}
+/* icon */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0; 
+    margin: 0; 
+}
+#navbar .icon li a {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-search{
+    background-image: url(../images/icon_search.ico.svg);
+}
+.icon-cart{
+    background-image: url(../images/icon_cart.ico.svg);
+}
+.icon-member{
+    background-image: url(../images/icon_member.ico.svg);
+}
+.icon-bgrbtn{
+    background-image: url(../images/icon_bgrbtn.ico.svg);
+}
+
+
+/* 主要內容區 */
+/* 單一商品區 */
+.product_area{
+    /* background-color: #585858; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 150px;
+    height: 964.27px;
+    /* background-color: rgba(255, 120, 158, 0.1); */
+}
+.product_box{
+    /* background-color: #8750BF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 1036.57px;
+    height: 514.7px;
+}
+/* 商品照(左側) */
+.product_img_left{
+    border-radius: 40px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    position: relative;
+    width: 476.574px;
+    height: 514.7px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* margin-top: 150px; */
+}
+.product_img{
+    object-fit:cover;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.product_img_left .fav_icon{
+    width: 73.47px;
+    height: 73.47px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer; 
+}
+
+/* 商品介紹(右側) */
+.product_right{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* height: 501.7px; */
+    color: #585858;
+    gap: 20px;
+}
+.product_title{
+    display: flex;
+    justify-content: space-between;
+}
+.product_title h3{
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    line-height: 150%; 
+    letter-spacing: 1px;
+}
+.product_title span{
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1.6px;
+}
+hr{
+    width: 100%;
+    stroke-width: 1px;
+}
+.product_description{
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+}
+/* 水晶 */
+.product_crystal_area{
+    gap: 8px;
+}
+.product_crystals{
+    display: flex;
+    gap: 10px;
+}
+.crystal_img{
+    width: 32.7px;
+    height: 32.7px;
+}
+.product_crystal_area p{
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    line-height: 150%; 
+    letter-spacing: 1.4px;
+}
+/* 串珠 */ /* 手圍 */
+.product_size,.product_hand{
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.product_size button,.product_hand button{
+    border-radius: 999px;
+    border: 1px solid #A67CEB;
+    background-color: transparent;
+    height: 39px;
+    width: 39px;
+    color: #A67CEB;
+}
+/* +1 */
+.product_qty,.product_qty button{
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.product_qty .left,.product_qty .right{
+    border-radius: 999px;
+    border: 1px solid #8750BF;
+    background-color: #8750BF;
+    height: 43px;
+    width: 43px;
+    color: #FFF;
+}
+.product_qty .center{
+    border-radius: 999px;
+    border: 1px solid #A67CEB;
+    background-color: transparent;
+    height: 43px;
+    width: 384px;
+    color: #585858;
+}
+/* 購買 */
+.product_buy{
+    display: flex;
+    gap: 20px;
+}
+.product_buy button{
+    border-radius: 999px;
+    border: 1px solid #A67CEB;
+    background-color: #A67CEB;
+    height: 44px;
+    width: 240px;
+
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 1.6px;
+    color: #FFF;
+}
+/* Collection區  */
+.collection{
+    position:relative;
+    background-color: #5348AA;
+    /* margin-top:-145px;  */
+    
+    color: #FFF;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+/* 弧度 */
+.collection-curve{
+    position: absolute; /* 改絕對定位貼在 footer 頂端 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 146px; /* 與 SVG viewBox 高度一致 */
+    overflow: hidden;
+    pointer-events: none; /* 避免覆蓋到往上點擊的元素 */
+    transform: translateY(-99%); /* 往上推一整個高度，蓋住 main 底部 */
+
+}
+.collection-curve svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #5348AA;
+}
+
+.collection_title{
+    font-family: "Lora";
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 2.4px;
+}
+/* 系列商品 */
+.collection_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.product_card {
+    width: 259.25px;
+    height: 342.56px;
+}
+.product_img_wrap{
+    border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    overflow:hidden;
+    position: relative;
+    margin-bottom: 20px;
+    aspect-ratio:1/1;  /* 寬 = 高 */
+}
+.product_img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.fav_icon{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer; 
+}
+/* 商品資訊 */
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.product_name{
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1.6px;
+}
+.product_price{
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+}
+/* 水晶 */
+.product_crystals{
+    display: flex;
+    gap: 6px;
+}
+.crystal_img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+/* footer */
+footer{
+    background: #5348AA;
+    height: 305px;
+    padding-top: 35px;
+}
+.footer_info {
+    display: flex;
+    justify-content: center; 
+    gap: 120px;
+    margin-bottom: 38px;
+  }
+.footer_title{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+    margin-bottom: 14px;
+}
+.COMPANY{
+    /* background-color: aqua; */
+    width: 145px;
+}
+.COMPANY a{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+.SERVICE{
+    /* background-color: #125FB2; */
+    width: 218px;
+}
+.SERVICE a{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+.CONTACT{
+    /* background-color:yellow; */
+    width: 239px;
+}
+.CONTACT p{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+.FOLLOW{
+    /* background-color: yellowgreen; */
+    width: 164px;
+
+}
+.social_icon{
+    display: flex;
+    gap: 10px;
+    width: 164px;
+    height: 48px;
+}
+.social_icon a{
+    width: 40px;
+    height: 40px;
+    transition: 0.35s;
+    background-size: contain;
+}
+.icon-line{
+    background-image: url(../images/icon_line.svg);
+}
+.icon-ig{
+    background-image: url(../images/icon_ig.svg);
+}
+.icon-fb{
+    background-image: url(../images/icon_fb.svg);
+}
+.icon-line:hover {
+    background-image: url(../images/icon_line_h.svg);
+}
+.icon-ig:hover {
+    background-image: url(../images/icon_ig_h.svg);
+}
+.icon-fb:hover {
+    background-image: url(../images/icon_fb_h.svg);
+}
+.footer_bottom{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 46px;
+}
+.footer_bottom hr{
+    width: 100%;
+    margin-bottom: 25px;
+    color: #D9D9D9;
+    border: 1px solid #FFFFFF;
+}
+

@@ -1,0 +1,349 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    /*不累加邊框及內距*/
+}
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    /* color: var(--color-black); */
+}
+
+/* 重置標題 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
+    /* color: var(--color-deep); */
+    text-decoration: none;
+}
+
+/* 導覽列 */
+#navbar{
+    background-image: 
+        linear-gradient(107deg, rgba(162, 105, 232, 0.97) -19.31%, rgba(66, 73, 212, 0.97) 169.85%),
+        url(../images/backgroundmaterial.jpg);
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+/* logo */
+#navbar .logo img {
+    height: 46px;
+}
+/* icon */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0; 
+    margin: 0; 
+}
+#navbar .icon li a {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-search{
+    background-image: url(../images/icon_search.ico.svg);
+}
+.icon-cart{
+    background-image: url(../images/icon_cart.ico.svg);
+}
+.icon-member{
+    background-image: url(../images/icon_member.ico.svg);
+}
+.icon-bgrbtn{
+    background-image: url(../images/icon_bgrbtn.ico.svg);
+}
+
+
+/* 主要內容區 */
+/* 系列icon區 */
+.icon_area {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 445px;
+    gap: 100px;
+}
+.icon_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.icon_item img {
+    width: 140px;
+    height: 140px;
+}
+.icon_item span{
+    color: #8750BF;
+    font-size: 20px;
+    font-family: "Noto Sans TC";
+    line-height: 30px;
+    letter-spacing: 1px;
+} 
+
+/* 商品區與背景對話框 */
+.product-background {
+    position: relative;
+    height: 1041px;
+    width: 100%;
+    background-color: #E4EBE3;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 110px;
+    /* padding-inline:24px; */
+}
+  
+/* 對話框上方三角形 */
+.product-background::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 324.7px; 
+    width: 71px;
+    height: 61px;
+    background-color: #E4EBE3;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* 商品們 */
+.products{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+.product_card {
+    width: 259.25px;
+    height: 342.56px;
+}
+/* 商品照 */
+.product_img_wrap{
+    border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    overflow:hidden;
+    position: relative;
+    margin-bottom: 20px;
+    aspect-ratio:1/1;  /* 寬 = 高 */
+}
+.product_img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.fav_icon{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer; 
+}
+/* 商品資訊 */
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.product_name{
+    color: #585858;
+    font-size: 16px;
+    font-family: "Noto Sans TC";
+    line-height: 24px;
+    letter-spacing: 1.60px;
+}
+.product_price{
+    color: #125FB2;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+/* 水晶 */
+.product_crystals{
+    display: flex;
+    gap: 6px;
+}
+.crystal_img{
+    width: 18px;
+    height: 18px;
+}
+
+/* 系列產品介紹 */
+.product_introduce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.product_introduce h5{
+    color: #128DB2;
+    font-size: 20px;
+    font-family: "LXGW WenKai Mono TC";
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+.divider_line{
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.product_introduce p{
+    color: #585858;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+
+
+
+/* footer */
+footer{
+    position:relative;
+    background:#5348AA;
+    color:#fff;
+    height: 277px;
+}
+/* 弧形區 */
+.footer-curve {
+    position: absolute; /* 改絕對定位貼在 footer 頂端 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 146px; /* 與 SVG viewBox 高度一致 */
+    overflow: hidden;
+    pointer-events: none; /* 避免覆蓋到往上點擊的元素 */
+    transform: translateY(-99%); /* 往上推一整個高度，蓋住 main 底部 */
+}
+.footer-curve svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #5348AA;     /* 確保路徑顏色跟 footer 相同 */
+}
+
+
+.footer_info {
+    display: flex;
+    justify-content: center; 
+    gap: 120px;
+    padding-bottom: 38px;
+  }
+.footer_title{
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1.40px;
+    margin-bottom: 14px;
+}
+footer a,footer p{
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 150%;
+    letter-spacing: 1.40px;
+}
+.social_icon{
+    display: flex;
+    gap: 10px;
+}
+.social_icon a{
+    width: 40px;
+    height: 40px;
+    transition: 0.35s;
+    background-size: contain;
+}
+.icon-line{
+    background-image: url(../images/icon_line.svg);
+}
+.icon-ig{
+    background-image: url(../images/icon_ig.svg);
+}
+.icon-fb{
+    background-image: url(../images/icon_fb.svg);
+}
+.icon-line:hover {
+    background-image: url(../images/icon_line_h.svg);
+}
+.icon-ig:hover {
+    background-image: url(../images/icon_ig_h.svg);
+}
+.icon-fb:hover {
+    background-image: url(../images/icon_fb_h.svg);
+}
+.footer_bottom{
+    height: 70px;
+    text-align:center;
+
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+.footer_bottom hr{
+    width: 100%;
+    color: #D9D9D9;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 25px;
+}

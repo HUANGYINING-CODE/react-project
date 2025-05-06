@@ -1,0 +1,202 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    /*不累加邊框及內距*/
+}
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    /* color: var(--color-black); */
+}
+
+/* 重置標題 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
+    /* color: var(--color-deep); */
+    text-decoration: none;
+}
+
+/* 導覽列 */
+#navbar{
+    background-image: 
+        linear-gradient(107deg, rgba(162, 105, 232, 0.97) -19.31%, rgba(66, 73, 212, 0.97) 169.85%),
+        url(../images/backgroundmaterial.jpg);
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+/* logo */
+#navbar .logo img {
+    height: 46px;
+}
+/* icon */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0; 
+    margin: 0; 
+}
+#navbar .icon li a {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-search{
+    background-image: url(../images/icon_search.ico.svg);
+}
+.icon-cart{
+    background-image: url(../images/icon_cart.ico.svg);
+}
+.icon-member{
+    background-image: url(../images/icon_member.ico.svg);
+}
+.icon-bgrbtn{
+    background-image: url(../images/icon_bgrbtn.ico.svg);
+}
+
+
+/* 主要內容區 */
+.numtest{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+    background: url(../images/numtest\(1\)\(2\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 第一個標題區 */
+#title-1{
+    /* width: 483.87px;
+    height: 42px; */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 32px;
+    margin-bottom: 46.11px; 
+}
+/* 左右裝飾 */
+.decorate-left,.decorate-right{
+    width: 82.94px;
+    height: 11.31px;
+}
+/* 標題 */
+.decorate-title{
+    color: #8750BF;
+    text-align: center;
+    font-family: "LXGW WenKai Mono TC";
+    font-size: 28px;
+    letter-spacing: 2.8px;
+}
+
+/* 第二個：主標題區 */
+#title-2{
+    font-family: "LXGW WenKai Mono TC";
+    font-size: 36px;
+    letter-spacing: 3.6px;
+    color: #8750BF;
+    /* margin-bottom: 70px;  */
+}
+
+/* 填入西元出生年月日 */
+/* 設定 form 的寬度和高度 */
+#birthdate-form {
+    width: 400px; 
+    height: 60px; 
+    margin: 30px;
+}
+/* 設定日期輸入框的大小 */
+#birthdate{
+    width: 100%; /* 日期輸入框占表單寬度的 % */
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.24);
+    padding: 0 20px; /* 增加內邊距 */
+    border: 1px solid rgba(0, 0, 0, 0.24);; /* 邊框顏色 */
+    border-radius: 5px; /* 圓角邊框 */
+    /* box-sizing: border-box; 使內邊距和邊框包含在寬度內 */
+    text-align: center; /* 讓文字居中對齊 */
+    line-height: 40px; /* 使文字垂直居中 */
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+
+/* 按鈕 */
+#button{
+    display: flex;
+    width: 300px;
+    padding: 10px 83px;
+    justify-content: center;
+    align-items: center; 
+    border: none;
+    border-radius: 999px; 
+    color: white; 
+    background-color: #A67CEB;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    cursor: pointer;
+}
