@@ -1,0 +1,485 @@
+@charset "UTF-8"; /* 必須在第一行 */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');/* google fonts常在第二行，只允許編碼在上面 */
+
+@font-face { /* 字體需上傳到自己的伺服器 */
+    font-family: "Sakitu Baelah Clean";
+    src: url(../webfont/Sakitu\ Baelah\ Clean.ttf);
+}
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    /* 不累加邊框及內距 */
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,time,mark,audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+/* 重置連接 */
+a {
+    display: block;  /* a預設的行內元素，不支援寬高及上下的間距，通常會改為區塊，方便設定 */
+    color: #ffffff;
+    text-decoration: none;
+}
+/* 變數：root */
+:root{
+    --color-white:#ffffff;
+    --color-deep:#585858;
+    --bg:url(../images/noisy-background.jpg);
+    --bg2:url(../images/bg.jpg);
+    --color-bg1:#faf2fc;
+    --color-primary1:#8750BF;
+    --color-primary2:#a269e8;
+    --color-primary3:#684581;
+    --color-primary4:#A67CEB;
+    --color-primary5:#E4DEED;
+    --color-primary6:#D7BEFF;
+    --color-primary7:#FAF6FF;
+    --color-primary8:#e7d8ea;
+    --color-hover1:#d8c9ef;
+    --color-font-gray:#8284A2;
+
+
+    --shodow:rgb(233, 166, 160, .35);
+    --color-font:#585858;
+    --color-lesser3:#4249d4;
+    --letter-spacing:2.4px;
+    --font-h2: "LXGW WenKai Mono TC",  monospace;
+    --font-button-24: "Noto Sans TC", sans-serif;
+}
+
+
+/* 導覽列 */
+#navbar {
+    display: flex;  /* flex:橫排 */
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    /* 背景材質 */
+    background-image: 
+        linear-gradient(107deg, rgba(162, 105, 232, 0.95) -19.31%, rgba(66, 73, 212, 0.95) 169.85%),
+        var(--bg);
+}
+#navbar .logo {
+    width: 181px;
+    margin-left: 25px;
+}
+header ul {
+    display: flex;
+    align-items: flex-end;
+}
+#navbar .icon {
+    display: flex;
+    margin-right: 25px;
+}
+#navbar .icon a {
+    width: 34px;
+    height: 34px;
+    margin: 0 10px;
+    background-size: contain;
+    /* transition: .35s; */
+}
+
+
+
+/* 背景 */
+.index {
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    justify-content: space-evenly;
+    padding: 60px 80px 20px 80px;
+    gap: 80px;
+    /* 背景材質 */
+    background-image: 
+        linear-gradient(rgba(250, 242, 252, 0.95), rgba(250, 242, 252, 0.95)),
+        var(--bg);
+}
+.boxs, .boxs2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+} 
+.boxs {
+    gap: 30px;
+}
+.boxs2 {
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    gap: 30px;
+}
+
+
+
+/* 名稱欄 */
+.title-name {
+    color: var(--color-primary3);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.input-name {
+    border-style: none;
+    width: 340px;
+    height: 52px;
+    border-radius: 15px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.input-name::placeholder, .price::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    text-align: center;
+    line-height: 52px;
+}
+.name {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 340px;
+}
+
+
+
+/* 尺寸設定 */
+.size-box {
+    padding: 22px 24px;
+    width: 390px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px 0px rgba(233, 166, 160, 0.25);
+}
+.title-size {
+    margin-bottom: 10px;
+    color: var(--color-primary1);
+}
+.line {
+    border-style: none;
+    height: 1px;
+    margin-bottom: 24px;
+    background: rgb(135, 80, 191, 0.5);
+}
+.button {
+    font-size: 14px;
+    color: #ffffff;
+    border-style: none;
+    padding: 4px 24px ;
+    width: 114px;
+    height: 32px;
+    border-radius: 20px;
+    background:var(--color-primary4)
+}
+.crystal-size-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+/* 滑桿 */
+.slider_input {
+    -webkit-appearance: none;
+    height: 4px;
+    width: 180px;
+    background: var(--color-primary5);
+    border-radius: 5px;
+    outline: none;
+    /* cursor: pointer; */
+}
+.slider_input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: .75px solid var(--color-primary6);
+    box-shadow: 0 0 5px var(--shodow);
+    /* transition: 0.3s; */
+}
+.slider_input:hover::-webkit-slider-thumb {
+    background: var(--color-primary6);
+    border: .75px solid #ffffff;
+}
+/* 尺寸設定視窗框 */
+.crystal-size-box, .ring-size-box {
+    margin-bottom: 16px;
+}
+.crystal-size-box, .ring-size-box, .ring-jewelry-box, .images-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.images-box img {
+    width: 25px;
+}
+.crystal-size, .ring-size, .ring-jewelry, .size-value {
+    font-size: 16px;
+    color: var(--color-font);
+}
+.size-value {
+    color: var(--color-font);
+    font-size: 14px;
+}
+
+
+
+/* 手鍊 */
+/* 手鏈容器：相對定位、置中 */
+.bracelet{
+    position: relative;
+    width: 404.4px;
+    height: 404.4px ;
+    margin: 40px; 
+}
+/* 珍珠共用設定 */
+.pearl{
+    position: absolute;
+    top: 50%; left: 50%;           /* 從中心開始擺 */
+    transform-origin: 0 0;         /* 旋轉基準點：左上角 (0,0) */
+    border-radius: 50%;
+    background-color: var(--color-primary8);
+    background-blend-mode: darken;
+    box-shadow: 0px 2.775px 6.937px 0px rgba(0, 0, 0, 0.10) inset;
+}
+/* 大珠 & 小珠尺寸 */
+.big{   width: 52.72px; height: 52.72px; }
+.small{ width: 23.594px; height: 23.594px; }
+/* 依索引 --i 決定位置：先旋轉，再往右 (translateX) 半徑距離，最後把珠子本身中心對準位置 */
+.pearl{
+    /* ➊ 旋轉到角度  ➋ 向右平移半徑  ➌ 把自身中心拉回 (-50%, -50%) */
+    transform:
+        rotate(calc(360deg / 32 * var(--i)))
+        translateX(calc(404.4px / 2))
+        translate(-50%, -50%);
+}
+
+
+
+/* 單顆水晶列表 */
+*{box-sizing:border-box;margin:0;padding:0;font-family:inherit} 
+/* 珠子視窗框 */
+#bead-window{
+  /* 6 顆珠寬 + 5 個 gap + 兩側 padding */
+  /* width: calc(6*var 48px + 5*var 12px + 2*var 20px); */
+  /* 2 行珠高 + gap + 上下 padding */
+  /* height: calc(2*var 48px + var 14px + 2*var 24px); */
+  width: 390px;
+  height: 158px;
+  margin: 38px auto;
+  background: var(--color-white);
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 0px 0px 15px 0px rgba(233, 166, 160, 0.25);
+  position: relative;
+  padding: 24px 20px;
+  padding-top: calc(20px + 10px/2);  /* 給頁籤留位置 */
+}
+/* 珠子頁籤列 */
+.tabs{
+  position: absolute;
+  top: -18px;              
+  left: 36.7%;
+  transform: translate(-50%,-50%); 
+  display: flex;
+  gap: 0;    
+  cursor: pointer;
+  align-items: self-end;
+  font-size: 14px;
+}
+/* 水晶列表 */
+.tabs hr {
+    background: var(--color-primary3);
+    border-style: none;
+    width: 1px;
+    height: 23.5px;
+    margin: 0;
+    padding: 0;
+}
+/* 單一頁籤 */
+.tab{
+  width: 71px;
+  height: 37px;
+  border: none;
+  padding: 0;
+  background: var(--color-primary7);
+  color: var(--color-primary3);
+  font-size: 14px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  line-height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+/* 可設定目前選取頁籤 (示範第一顆，你可用 JS / :has() 等方式切換) */
+.tab:last-child{
+  color: var(--color-primary1);
+  background: var(--color-white); /* 風格1 與底色同色 — 看你想要哪一顆高亮 */
+}
+/* 珠子網格 */
+.bead-grid{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 46px);  /* 垂直 */
+  grid-template-rows: repeat(2, 46px);  /* 水平 */
+  gap: 14px;
+  justify-content: center;
+  align-content: center;
+}
+/* 珠子外觀 */
+.bead{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #e3e3e3;
+  box-shadow: inset 0 4px 8px rgba(0,0,0,.10);
+}
+
+
+
+/* 儲存/刪除按鈕 */
+.icon-box1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    gap: 50px;
+}
+.icon-box1 img {
+    width: 50px;
+}
+
+
+
+/* 價格框 */
+.price-box {
+    position: relative;
+    top: 2%;
+}
+.price {
+    width: 300px;
+    height: 44px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+/* 右側欄 */
+.icon-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+}
+.icon1-box, .icon2 {
+    width: 40px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, .6);
+    box-shadow: 0px 0px 15px 0px rgba(233, 166, 160, 0.25);
+}
+.icon1-box {
+    padding: 20px 15px;
+    width: 87px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon1-box hr {
+    margin: 12px 0;
+}
+.icon2 {
+    width: 87px;
+    height: 87px;
+    padding-top: 25px;
+    border: 1px solid var(--color-primary4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+}
+.icon2-1 {
+    width: 42px;
+    margin: 0;
+}
+.icon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.icon1 p, .icon2 p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.icon1 p {
+    color: var(--color-font-gray);
+}
+.icon2 p {
+    color: var(--color-primary4);
+}
+.icon-btn {
+    width: 40px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* navbar-icon */
+.icon-search {
+    background-image: url(../images/icon_search.ico.svg);  /* ../回上層 */
+}
+.icon-cart {
+    background-image: url(../images/icon_cart.ico.svg);
+}
+.icon-member {
+    background-image: url(../images/icon_member.ico.svg);
+}
+.icon-menu {
+    background-image: url(../images/icon_bgrbtn.ico.svg);
+}
