@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystalholic-Cover</title>
+    <!-- 自訂的css -->
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="bgdark1"></div>
+    <!-- <div class="bglight"></div> -->
+    <div class="bgdark2"></div>
+    <!-- menu bar -->
+    <header id="header">
+        <!-- <div class="logo"><a href="#"><img src="./images/logotext_nav.ico.svg" alt=""></a></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><img src="./images/icon_search.ico.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icon_cart.ico.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icon_member.ico.svg" alt=""></a></li>
+                <li><a href="./menu-index.html"><img src="./images/icon_bgrbtn.ico.svg" alt=""></a></il>
+            </ul>
+        </nav> -->
+    </header>
+
+    <script>
+        fetch('nav.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+      </script>
+
+    <!-- 封面1 -->
+    <section class="ch-cover">
+        <div class="cover-box">
+            <span><img src="./images/鑽石左.svg" class="deco1" alt=""></span>
+            <h2>
+                <span class="cover1">匠心嚴選 靈韻手作</span>
+                <span class="cover2">打造專屬你的能量水晶</span>
+            </h2>
+            <span><img src="./images/鑽石左.svg" class="deco2" alt=""></span>
+            <span><img src="./images/鑽石左.svg" class="deco3" alt=""></span>
+            <span><img src="./images/scroll.svg" class="scroll" alt=""></span>
+        </div>
+    </section>
+
+    <!-- 封面2 -->
+    <section class="section-starttest">
+        <div class="startbtn"><a href="../Jasmine/numtest/numtest-1.html"><img src="./images/開始測驗btn.svg" alt=""></a></div>
+        <div class="startbox1">
+            <img src="./images/左手.svg" class="left">
+            <img src="./images/右手.svg" class="right" alt="">
+        </div>
+        <div class="startbox2">
+            <p>讓水晶傾聽心聲，編織你獨一無二的手鍊。</p>
+            <div class="scroll"><img src="./images/scroll.svg" alt=""></div>
+        </div>
+        <span class="bling"><img src="./images/亮晶晶.svg" alt=""></span>
+        <span class="numbg"><img src="./images/數字bg.svg" alt=""></span>
+        <!-- <div class="startbox2">
+        <div class="startbtn"><img src="./images/開始測驗btn.svg" alt=""></div>
+        <div class="startbox2">
+       <p class="starttest-p">讓水晶傾聽心聲，編織你獨一無二的手鍊。</p>
+    </div>
+    <span><img src="./images/亮晶晶.svg" class="bling" alt=""></span>
+    <div><img src="./images/scroll.svg" class="scroll" alt=""></div>
+</div> -->
+
+    </section>
+
+    <!-- 憑直覺抽一張吧 -->
+    <section id="section-tarotcard">
+        <div class="tarotcard">
+            <h2 id="tarotcard-title">
+                <span class="dimond-left"><img src="./images/鑽石左.svg" alt=""></span>
+                <div id="tarot-title">憑直覺抽一張吧</div>
+                <span class="dimond-right"><img src="./images/鑽石右.svg" alt=""></span>
+            </h2>
+            <div id="tarotcard-box">
+                <img src="./images/塔羅牌.svg" class="cardchild-1" alt="">
+                <img src="./images/塔羅牌.svg" class="card" alt="">
+                <img src="./images/塔羅牌.svg" class="card" alt="">
+                <img src="./images/塔羅牌.svg" class="card" alt="">
+                <img src="./images/塔羅牌.svg" class="card" alt="">
+                <img src="./images/塔羅牌.svg" class="card" alt="">
+            </div>
+            <button id="tarotcard-btn"><a href="#">所有商品</a></button>
+        </div>
+    </section>
+
+    <!-- 訂製專屬手鍊 -->
+    <section id="custom">
+        <div id="title-all">
+            <header class="custom-title">
+                <span><img src="./images/鑽石左.svg" class="dimond-left"></span>
+                <div id="custom-titlebox">
+                    <span id="custom-h2">Customized 訂製你的專屬水晶</span>
+                    <br>
+                    <span id="custom-p">精選天然水晶，打造獨一無二的手鍊。</span>
+                </div>
+                <span><img src="./images/鑽石右.svg" class="dimond-right" alt=""></span>
+            </header>
+            <button><a href="../阿啾/html/customization-1.html">立即訂製</a></button>
+        </div>
+    </section>
+
+    <!-- 水晶小百科 -->
+    <section id="section-crystaldiscovery">
+        <div class="crystal-display">
+            <img src="./images/黃髮晶.svg" class="circle" alt="">
+            <img src="./images/紫水晶.svg" class="circle" alt="">
+            <img src="./images/天使石.svg" class="circle" alt="">
+            <img src="./images/太陽石.svg" class="circle" alt="">
+            <img src="./images/月光石.svg" class="circle" alt="">
+            <img src="./images/綠幽靈1-02.svg" class="circle" alt="">
+            <img src="./images/月光石.svg" class="circle" alt="">
+            <img src="./images/粉水晶.svg" class="circle" alt="">
+            <img src="./images/天使石.svg" class="circle" alt="">
+            
+            <div class="circle"><img src="./images/藍晶石.svg"  alt=""> </div>
+
+            <img src="./images/紫水晶.svg" class="circle" alt="">
+            <img src="./images/太陽石.svg" class="circle" alt="">
+        </div>
+        <div class="section-crystaldiscovery">
+            <header>
+                <span><img src="./images/裝飾-左.svg" alt=""></span>
+                <div id="titlediscovery">
+                    <span>Crystal Discoveries</span>
+                    <span>水晶小百科</span>
+                </div>
+                <span><img src="./images/裝飾-右.svg" alt=""></span>
+                <!-- span.image裝飾要設定長寬嗎 -->
+            </header>
+            <div class="crystaldiscovery">
+                <article class="crystal">
+                    <div class="crystal-name">
+                        <span class="crtstal-enname">Kyanite</span>
+                        <span class="crtstal-chname">藍晶石</span>
+                    </div>
+                    <div class="discovery-content">
+                        <p>藍晶石是一種美麗的藍色水晶，擁有從淺藍到深藍的色澤，並呈現獨特的光澤。它常用於增強溝通、情緒平衡和靈性覺醒。</p>
+                    </div>
+                </article>
+                <article class="discovery-p1">
+                    <h2>主要功效</h2>
+                    <p class="discovery-p1content">
+                        促進溝通：幫助開啟喉輪，增強表達與自我溝通。<br>
+                        情緒平衡：有助於緩解焦慮與情緒不穩，帶來內心的平靜。<br>
+                        靈性覺醒：提升直覺與靈性成長，增強心靈覺醒。
+                    </p>
+                </article>
+                <article class="discovery-p2">
+                    <h2>適合人群</h2>
+                    <p class="discovery-p2content">
+                        追求心靈成長與靈性覺醒的人。<br>
+                        需要情緒平衡與放鬆的人。
+                    </p>
+                </article>
+                <article class="discovery-p3">
+                    <h2>建議搭配水晶</h2>
+                    <div class="discovery-imgbox">
+                        <img src="./images/天使石.svg" class="discovery-img" alt="">
+                        <img src="./images/紫水晶.svg" class="discovery-img" alt="">
+                        <img src="./images/太陽石.svg" class="discovery-img" alt="">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 礦迷回饋 -->
+    <section id="section-feedback">
+        <header class="feedback-displaytitle">
+            <span><img src="./images/裝飾-左.svg" alt=""></span>
+            <div id="title">
+                <span>Feedback</span>
+                <span>礦迷回饋</span>
+            </div>
+            <span><img src="./images/裝飾-右.svg" alt=""></span>
+            <!-- span.image裝飾要設定長寬嗎 -->
+        </header>
+        <div class="feedback-box">
+            <span class="feedback-arrowleft"><img src="./images/icon_arrow_left.ico.svg" alt=""></span>
+            <div class="feedback">
+                <div class="review-pic">
+                    <!-- 會員照片 -->
+                    <span><img src="./images/img-feedbackmenber.jpg" class="member-img" alt=""></span>
+                    <!-- 回饋照片 -->
+                    <span><img src="./images/img-feedback.jpg" class="review-img" alt=""></span>
+                </div>
+                <div class="feedback-left">
+                    <!-- 水晶5星評價 -->
+                    <div class="star-box">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                    </div>
+                    <!-- 回饋內文 -->
+                    <div class="content">
+                        <p>已經跟闆娘買過三次了，都靠水晶的能量撐過低潮期，看到美美的水晶，心情就很好</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="review-pic">
+                    <!-- 會員照片 -->
+                    <span><img src="./images/img-feedbackmenber.jpg" class="member-img" alt=""></span>
+                    <!-- 回饋照片 -->
+                    <span><img src="./images/img-feedback.jpg" class="review-img" alt=""></span>
+                </div>
+                <div class="feedback-left">
+                    <!-- 水晶5星評價 -->
+                    <div class="star-box">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                    </div>
+                    <!-- 回饋內文 -->
+                    <div class="content">
+                        <p>已經跟闆娘買過三次了，都靠水晶的能量撐過低潮期，看到美美的水晶，心情就很好</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="review-pic">
+                    <!-- 會員照片 -->
+                    <span><img src="./images/img-feedbackmenber.jpg" class="member-img" alt=""></span>
+                    <!-- 回饋照片 -->
+                    <span><img src="./images/img-feedback.jpg" class="review-img" alt=""></span>
+                </div>
+                <div class="feedback-left">
+                    <!-- 水晶5星評價 -->
+                    <div class="star-box">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                    </div>
+                    <!-- 回饋內文 -->
+                    <div class="content">
+                        <p>已經跟闆娘買過三次了，都靠水晶的能量撐過低潮期，看到美美的水晶，心情就很好</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="review-pic">
+                    <!-- 會員照片 -->
+                    <span><img src="./images/img-feedbackmenber.jpg" class="member-img" alt=""></span>
+                    <!-- 回饋照片 -->
+                    <span><img src="./images/img-feedback.jpg" class="review-img" alt=""></span>
+                </div>
+                <div class="feedback-left">
+                    <!-- 水晶5星評價 -->
+                    <div class="star-box">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                        <img src="./images/star.svg" class="star" alt="">
+                    </div>
+                    <!-- 回饋內文 -->
+                    <div class="content">
+                        <p>已經跟闆娘買過三次了，都靠水晶的能量撐過低潮期，看到美美的水晶，心情就很好</p>
+                    </div>
+                </div>
+            </div>
+            <span class="feedback-arrowright"><img src="./images/icon_arrow_right.ico.svg" alt=""></span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <!-- <div class="footer-content">
+            <div class="company">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">關於我們 About Us</a></li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>SERVICE</h3>
+                <ul>
+                    <li><a href="#">購買指南 How To Buy</a></li>
+                    <li><a href="#">商品包裝 Packaging</a></li>
+                    <li><a href="#">售後服務 After-sales service</a></li>
+                    <li><a href="#">常見問題 FAQ</a></li>
+                    <li><a href="#">保養維護 Maintenance</a></li>
+                    <li><a href="#">隱私權政策 Privacy</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>CONTACT US</h3>
+                <p>聯絡電話 / 0800 000 000</p>
+                <p>MON - FRI / 9:00 am - 18:00 pm</p>
+            </div>
+            <div class="followus">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="#"><img class="line" src="./images/sns-line-state-default.svg" alt="LINE"></a>
+                    <a href="#"><img class="ig" src="./images/sns-ig-state-default.svg" alt="Instagram"></a>
+                    <a href="#"><img class="fb" src="./images/sns-fb-state-default.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="copyright">
+            <p>2025 &copy; Crystalholic All Rights Reserved.</p>
+        </div>
+    </footer> -->
+
+    <script>
+        fetch('footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
+          });
+      </script>
+
+    <script></script>
+</body>
+
+</html>

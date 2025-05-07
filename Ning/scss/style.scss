@@ -1,0 +1,1079 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* 不累加邊框及內距 */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    // line-height: $line-h-l;
+    // color: $color-black;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block; // a預設的行內元素，不支援約寬高及上下間距，通常會改為區塊，方便設定
+    // color: $color-deep;
+    text-decoration: none;
+}
+
+
+/* ------字體------ */
+
+body {
+    font-family: 'LXGW WenKai Mono TC';
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+body *:lang(en) {
+    font-family: 'Lora', 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+
+body {
+    // width: 1440px;
+    // height: 4755px;
+    // border: 5px #FFF solid;
+    position: relative;
+
+    .bgdark1 {
+        background-image: url(../../public/image/cover\ bg1.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300vh;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        background-size: cover;
+
+    }
+
+    .bgdark2 {
+        background-image: url(../../public/image/cover\ bg2.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 36.5%;
+        position: absolute;
+        top: 63.6%;
+        left: 0;
+        z-index: -1;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    // background-color: #000;
+}
+
+
+/*menu bar*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(1px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.na v ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./public/image/背景材質.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/*封面1*/
+.ch-cover {
+    // width: 100vw;
+    // background-image: url(../images/background-dark1.jpg);
+    height: 100vh;
+    // border: 2px solid #FFF;
+    position: relative;
+
+    .cover-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: #FFF 2px solid;
+
+        .deco1 {
+            width: 53px;
+            height: 94px;
+
+            // 定位
+            position: absolute;
+            left: 31.6%;
+            top: 29.6%;
+        }
+
+        h2 {
+            color: #FFF;
+            font-size: 24px;
+
+            .cover1 {
+                font: size 24px;
+                writing-mode: vertical-rl;
+                width: 44px;
+                height: 324px;
+                // 定位
+                position: absolute;
+                left: 43.4%;
+                top: 7.3%;
+            }
+
+            .cover2 {
+                font: size 24px;
+                writing-mode: vertical-rl;
+                width: 44px;
+                height: 324px;
+                // 定位
+                position: absolute;
+                left: 52.7%;
+                top: 19.8%;
+            }
+        }
+
+        .deco2 {
+            width: 22px;
+            height: 38px;
+            transform: rotate(36deg);
+            // 定位
+            position: absolute;
+            left: 62.8%;
+            top: 24.3%;
+        }
+
+        .deco3 {
+            width: 34px;
+            height: 60px;
+            transform: rotate(54deg);
+
+
+            // 定位
+            position: absolute;
+            left: 65.8%;
+            top: 68.3%;
+        }
+
+        .scroll {
+            width: 28.5px;
+            height: 97.1px;
+
+            // 定位
+            position: absolute;
+            left: 49%;
+            top: 72.8%;
+        }
+
+
+    }
+
+}
+
+/*封面2*/
+.section-starttest {
+    height: 100vh;
+    // border: #FFF 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 50.2px;
+
+    .startbox1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 35%;
+
+        .left {
+            width: 305.66px;
+            height: 649.91px;
+        }
+
+        .right {
+            width: 316.46px;
+            height: 649.72px;
+        }
+    }
+
+    .startbox2 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 22.2px;
+
+        p {
+            color: #FFF;
+            font-size: 24px;
+        }
+
+        .scroll {
+            width: 28.5px;
+            height: 97.1px;
+        }
+    }
+
+    .startbtn {
+        width: 152.49px;
+        height: 346.82px;
+        position: absolute;
+        left: 44.7%;
+        top: 25.6%;
+        z-index: 1;
+    }
+
+    .bling {
+        width: 445.82px;
+        height: 402.37px;
+
+        position: absolute;
+        left: 34%;
+        top: 27.8%;
+    }
+
+    .numbg {
+        width: 1127.82px;
+        height: 707.42px;
+
+        position: absolute;
+        left: 11.3%;
+        top: 6.7%;
+
+    }
+
+
+}
+
+/*憑直覺抽一張吧*/
+#section-tarotcard {
+    // width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .tarotcard {
+        margin: 8.7% 5.57% 9% 5.6%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 60px; /////////////////////////////////////////////////////
+
+        #tarotcard-title {
+            color: #fff;
+            font-size: 24px;
+            width: 344px;
+            height: 42px;
+            // border: 1px solid white;
+            // margin-top: 70px;
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dimond-left {
+                width: 22px;
+                height: 39.22px;
+                margin: 0 50px 0 0;
+            }
+
+            .dimond-right {
+                width: 22px;
+                height: 39.22px;
+                margin: 0 0 0 50px;
+            }
+        }
+
+        #tarotcard-box {
+            width: 1279px;
+            height: 427px;
+            // border: 1px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cardchild-1 {
+                width: 280px;
+                height: 455px;
+
+                margin-left: 0;
+            }
+
+            .card {
+                width: 280px;
+                height: 455px;
+                margin-left: -110px;
+
+            }
+
+        }
+
+        #tarotcard-btn {
+            width: 283px;
+            height: 70px;
+            // padding: 20px 100px;
+            // margin-bottom: 72.18px;
+            display: flex;
+            justify-content: center; //items or content
+            align-items: center;
+
+            /*樣式*/
+            color: #8750BF;
+            background-color: transparent;
+            border-radius: 1000px;
+            border: 2px solid #8750BF;
+            backdrop-filter: blur(2px);
+
+            a {
+                color: #8750BF;
+            }
+        }
+    }
+}
+
+/*訂製專屬手鍊*/
+#custom {
+    color: #fff;
+    height: calc((700/800)*100vh);
+    width: clac((1440/1440)*100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // 背景
+    background-image: url("../images/客製化BN.jpg");
+    background-size: cover; //讓圖片填滿容器
+    background-position: center; //圖片置中
+    background-repeat: no-repeat; //不重複
+
+    #title-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .custom-title {
+            width: 783px;
+            height: 121px;
+            margin: 54px auto 34px;
+            margin-top: 54 auto auto px;
+            display: flex;
+            align-items: center;
+
+            #custom-titlebox {
+                width: 620px;
+                height: 121px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #custom-h2 {
+                    font-size: 36px;
+                }
+
+                #custom-p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .dimond-left {
+        width: 34px;
+        height: 60px;
+        margin: 0 40px 0 0;
+    }
+
+    .dimond-right {
+        width: 34px;
+        height: 60px;
+        margin: 0 0 0 40px;
+    }
+
+    button {
+        width: 264px;
+        height: 57px;
+        /* 玻璃擬態 */
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 15px 2px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(25px);
+
+        a {
+            color: #FFF;
+        }
+    }
+}
+
+/*水晶小百科*/
+///* 水晶小百科----字體、裝飾顏色要改 */
+#section-crystaldiscovery {
+    // width: 100vw;
+    height: 100vh;
+    // border: #FFF 2px solid;
+    color: #8750BF;
+    // margin: 6.7% 11.5% 3.1% 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    // position: relative;。。
+    /* margin: none; */
+
+    .crystal-display {
+        // display: flex;
+        // justify-content: center;
+        // align-items:center ;
+        position: relative;
+        margin: auto;
+        ////////////////////////////////////////////////////
+        width: 40%;
+        height: 691px;
+        ////////////////////////////////////////////////////
+        // border: 1px #FFF solid;
+
+        .circle {
+            position: absolute;
+            top: 80%;
+            left: 13%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            transform-origin: center -230px;
+            /* 半徑可調整 */
+        }
+
+        .circle:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .circle:nth-child(2) {
+            transform: rotate(30deg);
+        }
+
+        .circle:nth-child(3) {
+            transform: rotate(60deg);
+        }
+
+        .circle:nth-child(4) {
+            transform: rotate(90deg);
+        }
+
+        .circle:nth-child(5) {
+            transform: rotate(120deg);
+        }
+
+        .circle:nth-child(6) {
+            transform: rotate(150deg);
+        }
+
+        .circle:nth-child(7) {
+            transform: rotate(180deg);
+        }
+
+        .circle:nth-child(8) {
+            transform: rotate(210deg);
+        }
+
+        .circle:nth-child(9) {
+            transform: rotate(240deg);
+        }
+
+        .circle:nth-child(10) {
+            transform: rotate(270deg);
+            width: 150px;
+            height: 150px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 60px;
+                height: 60px;
+                background-image: url(../images/icon_btn_up.ico.svg);
+                display: block;
+                position: absolute;
+                top: -74px;
+                right: 61px;
+            }
+
+            &::after {
+                content: "";
+                width: 60px;
+                height: 60px;
+                background-image: url(../images/icon_btn_down.ico.svg);
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                align-items: center;
+                display: block;
+                position: absolute;
+                top: 164px;
+                right: 61px;
+            }
+        }
+
+        .circle:nth-child(11) {
+            transform: rotate(300deg);
+        }
+
+        .circle:nth-child(12) {
+            transform: rotate(330deg);
+        }
+    }
+}
+
+.section-crystaldiscovery {
+    margin: 6.7% 11.5% 9.7% 7.91%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 35px;
+
+    header {
+        width: 498px;
+        height: 78px;
+
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+
+        #titlediscovery {
+            /* color: #FFF; */
+            font-size: 28px;
+            width: 498px;
+            height: 78px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .crystaldiscovery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        /* 水晶info */
+        .crystal {
+            width: 600px;
+            height: 118px;
+            padding: 20px 35px;
+            /* border: 2px #FFF solid; */
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            /* 玻璃擬態 */
+            border-radius: 20px;
+            background: rgba(252, 252, 252, 0.40);
+            box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+            backdrop-filter: blur(2.5px);
+
+
+            .crystal-name {
+                width: 117px;
+                height: 78px;
+                padding: 0 24px 0 0;
+                border-right: 1px #FFF solid;
+                ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .crystal-enname {
+                    font-size: 20px;
+                }
+
+                .crystal-chname {
+                    font-size: 28px;
+                }
+            }
+
+            .discovery-content {
+                font-size: 100%;
+                width: 389px;
+                height: 78px;
+                padding: 0 0 0 24px;
+                margin: none;
+            }
+        }
+
+        /* 主要功效 */
+        .discovery-p1 {
+            width: 600px;
+            height: 164px;
+            padding: 20px 35px;
+            /* border: 2px #FFF solid; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 玻璃擬態 */
+            border-radius: 20px;
+            background: rgba(252, 252, 252, 0.40);
+            box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+            backdrop-filter: blur(2.5px);
+
+            h2 {
+                font-size: 20px;
+                width: 530px;
+                height: 30px;
+                padding: 0 0 8px 0;
+                border-bottom: 1px #FFF solid;
+                display: flex;
+                align-items: center;
+            }
+
+            .discovery-p1content {
+                width: 530px;
+                height: 78px;
+                margin-top: 8px;
+            }
+        }
+
+        /* 適合人群 */
+        .discovery-p2 {
+            width: 600px;
+            height: 138px;
+            padding: 20px 35px;
+            /* border: 2px #FFF solid; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 玻璃擬態 */
+            border-radius: 20px;
+            background: rgba(252, 252, 252, 0.40);
+            box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+            backdrop-filter: blur(2.5px);
+
+            h2 {
+                font-size: 20px;
+                width: 530px;
+                height: 30px;
+                padding: 0 0 8px 0;
+                border-bottom: 1px #FFF solid;
+                display: flex;
+                align-items: center;
+            }
+
+            .discovery-p2content {
+                width: 530px;
+                height: 52px;
+                margin-top: 8px;
+            }
+        }
+
+        /* 建議水晶 */
+        .discovery-p3 {
+            width: 600px;
+            height: 76px;
+            padding: 20px 35px;
+            gap: 32px;
+            display: flex;
+            align-items: center;
+            /* 玻璃擬態 */
+            border-radius: 20px;
+            background: rgba(252, 252, 252, 0.40);
+            box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+            backdrop-filter: blur(2.5px);
+
+            h2 {
+                font-size: 20px;
+                width: 125px;
+                height: 30px;
+                /* border: 1px #FFF solid; */
+                display: flex;
+                align-items: center;
+            }
+
+            .discovery-imgbox {
+                display: flex;
+                gap: 12px;
+
+                .discovery-img {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/*礦迷回饋*/
+#section-feedback {
+    .feedback-displaytitle {
+        width: 438px;
+        height: 78px;
+        margin: 100px auto 90px;
+        /* margin-top: 50 auto auto px; */
+        display: flex;
+        align-items: center;
+
+        #title {
+            color: #FFF;
+            font-size: 28px;
+            width: 438px;
+            height: 78px;
+            /* margin: 0 auto 90px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .feedback-box {
+        margin: 0 0 142px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .feedback-arrowleft {
+            width: 48px;
+            height: 48px;
+            margin: 0 23px 0 0;
+        }
+
+        .feedback-arrowright {
+            width: 48px;
+            height: 48px;
+            margin: 0 0 0 23px;
+        }
+    }
+
+    .feedback {
+        color: #FFF;
+        width: 290px;
+        height: 140px;
+        border-radius: 20px;
+        /* border: 1px solid #000; */
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-evenly;
+        align-items: center;
+        gap: 12px;
+        /* 玻璃擬態 */
+        border-radius: 20px;
+        background: rgba(252, 252, 252, 0.40);
+        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(2.5px);
+
+
+        .review-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* position: relative; */
+
+            .member-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                /* position: absolute; */
+            }
+
+            .review-img {
+                width: 113px;
+                height: 90px;
+                border-radius: 10px;
+                /* position: absolute; */
+            }
+        }
+
+
+        .feedback-left {
+            width: 135px;
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+
+            .star-box {
+                display: flex;
+                justify-content: start;
+                gap: 8px;
+
+                .star {
+                    width: 10px;
+                    height: 17px;
+                }
+            }
+
+            // .content p {
+
+            p {
+                width: 135px;
+                height: 72px;
+                // margin: 7px 15px 20.87px 12px;
+                font-size: 12px;
+
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer {
+    border-radius: 60px 60px 0 0;
+    background-image: url('./public/image/footer背景.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-content>div {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+}
+
+
+
+.footer h3 {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.contact p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+
+    // //hover要用JS寫// //
+    // .line {
+    //     &:hover {
+    //         content: url("../images/sns-line-state-hover.svg"); // 換圖片
+    //     }
+    // }
+
+    // .ig {
+    //     &:hover {
+    //         content: url("../images/sns-ig-state-hover.svg"); // 換圖片
+    //     }
+    // }
+
+    // .fb {
+    //     &:hover {
+    //         content: url("../images/sns-fb-state-hover.svg"); // 換圖片
+    //     }
+    // }
+}
+
+/* 版權 */
+.copyright {
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+}
