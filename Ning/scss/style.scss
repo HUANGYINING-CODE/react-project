@@ -269,7 +269,7 @@ body {
                 // 定位
                 position: absolute;
                 left: 43.4%;
-                top: 7.3%;
+                top: 14%;
             }
 
             .cover2 {
@@ -280,7 +280,7 @@ body {
                 // 定位
                 position: absolute;
                 left: 52.7%;
-                top: 19.8%;
+                top: 25.4%;
             }
         }
 
@@ -712,6 +712,36 @@ body {
             flex-direction: column;
             align-items: center;
         }
+        &::before{
+            content: "";
+            display: block;
+            // left: 10.61px;
+            // top: 18.28px;
+            // transform: rotate(-35deg);
+            width: 82.94px;
+            height: 11.31px;
+            margin-right:16px;
+
+            background-image: url("../../public/image/icon/裝飾-紫.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            // left: 10.61px;
+            // top: 18.28px;
+            transform: rotate(180deg);
+            width: 82.94px;
+            height: 11.31px;
+            margin-right:16px;
+
+            background-image: url("../../public/image/icon/裝飾-紫.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
     }
 
     .crystaldiscovery {
@@ -844,7 +874,7 @@ body {
 
             h2 {
                 font-size: 20px;
-                width: 125px;
+                width: 132px;
                 height: 30px;
                 /* border: 1px #FFF solid; */
                 display: flex;
@@ -989,18 +1019,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 60px 20px 20px;
-    margin-top: 60px;
+    // padding: 60px 20px 20px;
+    // margin-top: 60px;
 }
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    // flex-wrap: wrap;
+    // justify-content: center;
     gap: 40px;
 }
 
-.footer-content>div {
+.footer-content div {
     flex: 1 1 200px;
     max-width: 300px;
     text-align: left;
