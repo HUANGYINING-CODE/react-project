@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
 /* reset CSS */
 * {
     margin: 0;
@@ -139,17 +142,17 @@ a {
 
 /* ------字體------ */
 
-body {
-    font-family: 'LXGW WenKai Mono TC';
-    font-weight: 100;
-    line-height: 1.5;
-    letter-spacing: 2px;
-}
+// body {
+//     font-family: 'LXGW WenKai Mono TC';
+//     font-weight: 100;
+//     line-height: 1.5;
+//     letter-spacing: 2px;
+// }
 
-body *:lang(en) {
-    font-family: 'Lora', 'Georgia', serif;
-    letter-spacing: 2px;
-}
+// body *:lang(en) {
+//     font-family: 'Lora', 'Georgia', serif;
+//     letter-spacing: 2px;
+// }
 
 
 body {
@@ -711,7 +714,8 @@ body {
             flex-direction: column;
             align-items: center;
         }
-        &::before{
+
+        &::before {
             content: "";
             display: block;
             // left: 10.61px;
@@ -719,14 +723,14 @@ body {
             // transform: rotate(-35deg);
             width: 82.94px;
             height: 11.31px;
-            margin-right:16px;
+            margin-right: 16px;
 
             background-image: url("../../public/image/icon/裝飾-紫.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
 
-        &::after{
+        &::after {
             content: "";
             display: block;
             // left: 10.61px;
@@ -734,7 +738,7 @@ body {
             transform: rotate(180deg);
             width: 82.94px;
             height: 11.31px;
-            margin-right:16px;
+            margin-right: 16px;
 
             background-image: url("../../public/image/icon/裝飾-紫.svg");
             background-size: contain;
@@ -1012,89 +1016,112 @@ body {
 }
 
 /*footer*/
-.footer {
-    border-radius: 60px 60px 0 0;
-    background-image: url('./public/image/footer背景.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // padding: 60px 20px 20px;
-    // margin-top: 60px;
+footer {
+    position: relative;
+    color: #fff;
+    height: 277px;
 }
 
-.footer-content {
+.footer_info {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    gap: 40px;
+    gap: 120px;
+    padding-bottom: 38px;
 }
 
-.footer-content div {
-    flex: 1 1 200px;
-    max-width: 300px;
-    text-align: left;
-    font-family: 'Noto Sans TC';
-    font-weight: 300;
-}
-
-
-
-.footer h3 {
-    color: white;
-    font-family: 'Noto Sans TC';
-    font-size: 16px;
+.footer_title {
+    font-size: 14px;
+    font-family: "Noto Sans TC";
     font-weight: 700;
-    margin-bottom: 15px;
+    line-height: 150%;
+    letter-spacing: 1.40px;
+    margin-bottom: 14px;
 }
 
-.footer ul li {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
+footer a,
+footer p {
     color: white;
     font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 150%;
+    letter-spacing: 1.40px;
 }
 
-.contact p {
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.social-icons {
+.social_icon {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+}
+
+.social_icon a {
+    width: 40px;
+    height: 40px;
+    transition: 0.35s;
+    background-size: contain;
+}
+
+.icon-line {
+    background-image: url(../../public/image/icon/sns-line-state-default.svg);
+}
+
+.icon-ig {
+    background-image: url(../../public/image/icon/sns-ig-state-default.svg);
+}
+
+.icon-fb {
+    background-image: url(../../public/image/icon/sns-fb-state-default.svg);
+}
+
+.icon-line:hover {
+    background-image: url(../../public/image/icon/sns-line-state-hover.svg);
+}
+
+.icon-ig:hover {
+    background-image: url(../../public/image/icon/sns-ig-state-hover.svg);
+}
+
+.icon-fb:hover {
+    background-image: url(../../public/image/icon/sns-fb-state-hover.svg);
+}
+
+.footer_bottom {
+    height: 70px;
+    text-align: center;
+
+    font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+
+.footer_bottom hr {
+    width: 100%;
+    color: #D9D9D9;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 25px;
 }
 
 
-.social-icons img {
-    width: 48px;
-    height: 48px;
 
-    // //hover要用JS寫// //
-    // .line {
-    //     &:hover {
-    //         content: url("../images/sns-line-state-hover.svg"); // 換圖片
-    //     }
-    // }
 
-    // .ig {
-    //     &:hover {
-    //         content: url("../images/sns-ig-state-hover.svg"); // 換圖片
-    //     }
-    // }
+// //hover要用JS寫// //
+// .line {
+//     &:hover {
+//         content: url("../images/sns-line-state-hover.svg"); // 換圖片
+//     }
+// }
 
-    // .fb {
-    //     &:hover {
-    //         content: url("../images/sns-fb-state-hover.svg"); // 換圖片
-    //     }
-    // }
-}
+// .ig {
+//     &:hover {
+//         content: url("../images/sns-ig-state-hover.svg"); // 換圖片
+//     }
+// }
+
+// .fb {
+//     &:hover {
+//         content: url("../images/sns-fb-state-hover.svg"); // 換圖片
+//     }
+// }
+// }
 
 /* 版權 */
 .copyright {
