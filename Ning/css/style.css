@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap");
 /* reset CSS */
 * {
   margin: 0;
@@ -132,14 +133,9 @@ a {
 
 /* ------字體------ */
 body {
-  font-family: "LXGW WenKai Mono TC";
+  font-family: "Lora", "Georgia", "LXGW WenKai Mono TC", serif;
   font-weight: 100;
   line-height: 1.5;
-  letter-spacing: 2px;
-}
-
-body *:lang(en) {
-  font-family: "Lora", "Georgia", serif;
   letter-spacing: 2px;
 }
 
@@ -152,10 +148,9 @@ body .bgdark1 {
   width: 100%;
   height: 300vh;
   position: absolute;
-  top: 0%;
-  left: 0%;
   z-index: -1;
   background-size: cover;
+  background-position: center;
 }
 body .bgdark2 {
   background-image: url(../../public/image/cover\ bg2.svg);
@@ -195,7 +190,7 @@ body .bgdark2 {
   gap: 20px;
 }
 
-.na v ul li img {
+.nav ul li a img {
   width: 30px;
   height: 30px;
 }
@@ -236,6 +231,12 @@ body .bgdark2 {
   color: #FFF;
   font-size: 24px;
 }
+.ch-cover .cover-box h2 span {
+  font-family: "LXGW WenKai Mono TC";
+  font-weight: 100;
+  line-height: 1.5%;
+  letter-spacing: 8px;
+}
 .ch-cover .cover-box h2 .cover1 {
   font: size 24px;
   writing-mode: vertical-rl;
@@ -243,7 +244,7 @@ body .bgdark2 {
   height: 324px;
   position: absolute;
   left: 43.4%;
-  top: 14%;
+  top: 16.1%;
 }
 .ch-cover .cover-box h2 .cover2 {
   font: size 24px;
@@ -252,7 +253,7 @@ body .bgdark2 {
   height: 324px;
   position: absolute;
   left: 52.7%;
-  top: 25.4%;
+  top: 28.6%;
 }
 .ch-cover .cover-box .deco2 {
   width: 22px;
@@ -351,7 +352,7 @@ body .bgdark2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 7.5%;
 }
 #section-tarotcard .tarotcard #tarotcard-title {
   color: #fff;
@@ -446,10 +447,10 @@ body .bgdark2 {
   justify-content: center;
   align-items: center;
 }
-#custom #title-all .custom-title #custom-titlebox #custom-h2 {
+#custom #title-all .custom-title #custom-titlebox h2 {
   font-size: 36px;
 }
-#custom #title-all .custom-title #custom-titlebox #custom-p {
+#custom #title-all .custom-title #custom-titlebox h3 {
   font-size: 18px;
 }
 #custom .dimond-left {

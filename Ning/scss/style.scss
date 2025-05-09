@@ -1,3 +1,8 @@
+@use "./variable" as *;   
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
 /* reset CSS */
 * {
     margin: 0;
@@ -102,7 +107,7 @@ body {
         /*西文*/
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
         /*中文*/
-        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif ;
     // line-height: $line-h-l;
     // color: $color-black;
 }
@@ -140,17 +145,11 @@ a {
 /* ------字體------ */
 
 body {
-    font-family: 'LXGW WenKai Mono TC';
+    font-family: 'Lora', 'Georgia',"LXGW WenKai Mono TC", serif; //serif 套系統有襯線字
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: 2px;
 }
-
-body *:lang(en) {
-    font-family: 'Lora', 'Georgia', serif;
-    letter-spacing: 2px;
-}
-
 
 body {
     // width: 1440px;
@@ -160,14 +159,40 @@ body {
 
     .bgdark1 {
         background-image: url(../../public/image/cover\ bg1.svg);
+
+        // @media ($media-lg){
+        //     background-repeat: no-repeat;
+        //     width: 100%;
+        //     height: 300vh;
+        //     position: absolute;
+        //     top: 0%;
+        //     left: 0%;
+        //     z-index: -1;
+        //     background-size: cover;
+        //     background-position: center; 
+        // }
+        // @media ($media-md){
+        //     background-repeat: no-repeat;
+        //     width: 100%;
+        //     height: 300vh;
+        //     position: absolute;
+        //     top: 0%;
+        //     left: 0%;
+        //     z-index: -1;
+        //     background-size: cover;
+        //     background-position: center; 
+        // }
+
+        // background-image: url(../../public/image/cover\ bg1.svg);
         background-repeat: no-repeat;
         width: 100%;
         height: 300vh;
         position: absolute;
-        top: 0%;
-        left: 0%;
+        // top: 0%;
+        // left: 0%;
         z-index: -1;
         background-size: cover;
+        background-position: center;
 
     }
 
@@ -235,9 +260,7 @@ body {
 /*封面1*/
 .ch-cover {
     // width: 100vw;
-    // background-image: url(../images/background-dark1.jpg);
     height: 100vh;
-    // border: 2px solid #FFF;
     position: relative;
 
     .cover-box {
@@ -260,6 +283,13 @@ body {
             color: #FFF;
             font-size: 24px;
 
+            span {
+                font-family: 'LXGW WenKai Mono TC';
+                font-weight: 100;
+                line-height: 1.5%;
+                letter-spacing: 8px;
+            }
+
             .cover1 {
                 font: size 24px;
                 writing-mode: vertical-rl;
@@ -268,7 +298,7 @@ body {
                 // 定位
                 position: absolute;
                 left: 43.4%;
-                top: 14%;
+                top: 16.1%;
             }
 
             .cover2 {
@@ -279,7 +309,7 @@ body {
                 // 定位
                 position: absolute;
                 left: 52.7%;
-                top: 25.4%;
+                top: 28.6%;
             }
         }
 
@@ -323,7 +353,6 @@ body {
 /*封面2*/
 .section-starttest {
     height: 100vh;
-    // border: #FFF 2px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,15 +440,13 @@ body {
         justify-content: center;
         align-items: center;
 
-        gap: 60px; /////////////////////////////////////////////////////
+        gap: 7.5%; /////////////////////////////////////////////////////
 
         #tarotcard-title {
             color: #fff;
             font-size: 24px;
             width: 344px;
             height: 42px;
-            // border: 1px solid white;
-            // margin-top: 70px;
 
             display: flex;
             justify-items: center;
@@ -520,6 +547,19 @@ body {
             display: flex;
             align-items: center;
 
+            // &::before {  //做出來怪怪的
+            //     content: "";
+            //     display: block;
+            //     background-image: url(../images/deco-diamond.svg);
+            //     background-repeat: no-repeat;
+            //     width: 34px;
+            //     height: 60px;
+            //     transform: rotate(-45deg);
+            //     margin: 0 40px 0 0;
+            //     padding: 10 10;
+
+            // }
+
             #custom-titlebox {
                 width: 620px;
                 height: 121px;
@@ -528,11 +568,11 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                #custom-h2 {
+                h2 {
                     font-size: 36px;
                 }
 
-                #custom-p {
+                h3 {
                     font-size: 18px;
                 }
             }
@@ -711,7 +751,8 @@ body {
             flex-direction: column;
             align-items: center;
         }
-        &::before{
+
+        &::before {
             content: "";
             display: block;
             // left: 10.61px;
@@ -719,14 +760,14 @@ body {
             // transform: rotate(-35deg);
             width: 82.94px;
             height: 11.31px;
-            margin-right:16px;
+            margin-right: 16px;
 
             background-image: url("../../public/image/icon/裝飾-紫.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
 
-        &::after{
+        &::after {
             content: "";
             display: block;
             // left: 10.61px;
@@ -734,7 +775,7 @@ body {
             transform: rotate(180deg);
             width: 82.94px;
             height: 11.31px;
-            margin-right:16px;
+            margin-right: 16px;
 
             background-image: url("../../public/image/icon/裝飾-紫.svg");
             background-size: contain;

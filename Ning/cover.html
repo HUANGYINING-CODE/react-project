@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystalholic-Cover</title>
+    <!-- 網站圖示 -->
+    <link rel="icon" href="./">
     <!-- 自訂的css -->
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -27,11 +29,11 @@
     </header>
     <script>
         fetch('nav.html')
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById('header').innerHTML = html;
-          });
-      </script>
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
 
     <!-- 封面1 -->
     <section class="ch-cover">
@@ -49,10 +51,11 @@
 
     <!-- 封面2 -->
     <section class="section-starttest">
-        <div class="startbtn"><a href="../Jasmine/numtest/numtest-1.html"><img src="./images/開始測驗btn.svg" alt=""></a></div>
+        <div class="startbtn"><a href="../Jasmine/numtest/numtest-1.html"><img src="./images/開始測驗btn.svg" alt=""></a>
+        </div>
         <div class="startbox1">
-            <img src="./images/左手.svg" class="left">
-            <img src="./images/右手.svg" class="right" alt="">
+            <img src="./images/L.svg" class="left">
+            <img src="./images/R.png" class="right" alt="">
         </div>
         <div class="startbox2">
             <p>讓水晶傾聽心聲，編織你獨一無二的手鍊。</p>
@@ -97,9 +100,9 @@
             <header class="custom-title">
                 <span><img src="./images/鑽石左.svg" class="dimond-left"></span>
                 <div id="custom-titlebox">
-                    <span id="custom-h2">Customized 訂製你的專屬水晶</span>
+                    <h2>Customized 訂製你的專屬水晶</h2>
                     <br>
-                    <span id="custom-p">精選天然水晶，打造獨一無二的手鍊。</span>
+                    <h3>精選天然水晶，打造獨一無二的手鍊。</h3>
                 </div>
                 <span><img src="./images/鑽石右.svg" class="dimond-right" alt=""></span>
             </header>
@@ -119,8 +122,8 @@
             <img src="./images/月光石.svg" class="circle" alt="">
             <img src="./images/粉水晶.svg" class="circle" alt="">
             <img src="./images/天使石.svg" class="circle" alt="">
-            
-            <div class="circle"><img src="./images/藍晶石.svg"  alt=""> </div>
+
+            <div class="circle"><img src="./images/藍晶石.svg" alt=""> </div>
 
             <img src="./images/紫水晶.svg" class="circle" alt="">
             <img src="./images/太陽石.svg" class="circle" alt="">
@@ -318,15 +321,21 @@
         </div>
     </footer> -->
 
-    <script>
-        fetch('footer.html')
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById('footer').innerHTML = html;
-          });
-      </script>
+        <script>
+            fetch('footer.html')
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('footer').innerHTML = html;
+                });
+        </script>
+    </footer>
 
-    <script></script>
+    <!-- jquery CDN 要先執行-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <!-- 自訂的js (一定放在最下面) -->
+        <script src="./js/script.js"></script>
+
 </body>
 
 </html>
