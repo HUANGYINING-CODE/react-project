@@ -416,7 +416,7 @@ body .bgdark2 {
 #custom {
   color: #fff;
   height: 87.5vh;
-  width: clac(100vw);
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
