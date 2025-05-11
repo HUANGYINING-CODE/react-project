@@ -1,4 +1,4 @@
-@use "./variable" as *;   
+@use "./variable" as *;
 
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
 
@@ -107,7 +107,7 @@ body {
         /*西文*/
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
         /*中文*/
-        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif ;
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
     // line-height: $line-h-l;
     // color: $color-black;
 }
@@ -145,7 +145,7 @@ a {
 /* ------字體------ */
 
 body {
-    font-family: 'Lora', 'Georgia',"LXGW WenKai Mono TC", serif; //serif 套系統有襯線字
+    font-family: 'Lora-Italic', 'Georgia', "LXGW WenKai Mono TC", serif; //serif 套系統有襯線字
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: 2px;
@@ -155,12 +155,6 @@ body {
     // line-height: 1.5;
     // letter-spacing: 2px;
 }
-
-body {
-   
-}
-
-
 
 body {
     // width: 1440px;
@@ -199,8 +193,8 @@ body {
         width: 100%;
         height: 300vh;
         position: absolute;
-        // top: 0%;
-        // left: 0%;
+        top: 0%;
+        left: 0%;
         z-index: -1;
         background-size: cover;
         background-position: center;
@@ -270,7 +264,7 @@ body {
 
 /*封面1*/
 .ch-cover {
-    // width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 
@@ -288,6 +282,22 @@ body {
             position: absolute;
             left: 31.6%;
             top: 29.6%;
+
+            @media ($media-lg) {
+                left: 27%;
+                top: 40%;
+            }
+
+
+            @media ($media-md) {
+                left: 24%;
+                top: 38%;
+            }
+
+            @media ($media-sm) {
+                left: 14%;
+                top: 39%;
+            }
         }
 
         h2 {
@@ -302,7 +312,7 @@ body {
             }
 
             .cover1 {
-                font: size 24px;
+                font-size: 24px;
                 writing-mode: vertical-rl;
                 width: 44px;
                 height: 324px;
@@ -310,10 +320,27 @@ body {
                 position: absolute;
                 left: 43.4%;
                 top: 16.1%;
+
+                @media ($media-lg) {
+                    left: 40.4%;
+                    top: 30.1%;
+                }
+
+
+                @media ($media-md) {
+                    left: 39.4%;
+                    top: 26.1%;
+                }
+
+                @media ($media-sm) {
+                    left: 34%;
+                    top: 25.1%;
+                }
             }
 
+
             .cover2 {
-                font: size 24px;
+                font-size: 24px;
                 writing-mode: vertical-rl;
                 width: 44px;
                 height: 324px;
@@ -321,6 +348,22 @@ body {
                 position: absolute;
                 left: 52.7%;
                 top: 28.6%;
+
+                @media ($media-lg) {
+                    left: 53.4%;
+                    top: 41.1%;
+                }
+
+
+                @media ($media-md) {
+                    left: 55.4%;
+                    top: 40.1%;
+                }
+
+                @media ($media-sm) {
+                    left: 50%;
+                    top: 41.1%;
+                }
             }
         }
 
@@ -332,6 +375,22 @@ body {
             position: absolute;
             left: 62.8%;
             top: 24.3%;
+
+            @media ($media-lg) {
+                left: 68%;
+                top: 36%;
+            }
+
+
+            @media ($media-md) {
+                left: 71.4%;
+                top: 33.1%;
+            }
+
+            @media ($media-sm) {
+                left: 75%;
+                top: 35%;
+            }
         }
 
         .deco3 {
@@ -339,11 +398,26 @@ body {
             height: 60px;
             transform: rotate(54deg);
 
-
             // 定位
             position: absolute;
             left: 65.8%;
             top: 68.3%;
+
+            @media ($media-lg) {
+                left: 70%;
+                top: 67%;
+            }
+
+
+            @media ($media-md) {
+                left: 76.4%;
+                top: 75.1%;
+            }
+
+            @media ($media-sm) {
+                left: 78%;
+                top: 77%;
+            }
         }
 
         .scroll {
@@ -354,6 +428,22 @@ body {
             position: absolute;
             left: 49%;
             top: 72.8%;
+
+            @media ($media-lg) {
+                left: 50%;
+                top: 76.1%;
+            }
+
+
+            @media ($media-md) {
+                left: 50%;
+                top: 84%;
+            }
+
+            @media ($media-sm) {
+                left: 50%;
+                top: 81%;
+            }
         }
 
 
@@ -363,27 +453,64 @@ body {
 
 /*封面2*/
 .section-starttest {
+    border: #e22121 2px solid;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     position: relative;
-    gap: 50.2px;
+    // gap: 0;
 
     .startbox1 {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-content: start;
         gap: 35%;
 
         .left {
-            width: 305.66px;
-            height: 649.91px;
+            // width: 20.7vw;
+            // height: 73.3vh;
+            width: 299px;
+            height: 587px;
+
+            @media ($media-lg) {
+                width: 20.7vw;
+                height: 73.3vh;
+            }
+
+
+            @media ($media-md) {
+                width: 299px;
+                height: 587px;
+            }
+
+            @media ($media-sm) {
+                width: 299px;
+                height: 587px;
+            }
+
         }
 
         .right {
-            width: 316.46px;
-            height: 649.72px;
+            width: 299px;
+            height: 587px;
+
+            @media ($media-lg) {
+                width: 299px;
+                height: 587px;
+            }
+
+
+            @media ($media-md) {
+                width: 299px;
+                height: 587px;
+            }
+
+            @media ($media-sm) {
+                width: 299px;
+                height: 587px;
+            }
         }
     }
 
@@ -397,39 +524,93 @@ body {
         p {
             color: #FFF;
             font-size: 24px;
+            padding-top: 50.2px;
         }
 
-        .scroll {
+        img {
             width: 28.5px;
             height: 97.1px;
         }
     }
 
-    .startbtn {
+    .startbtn a {
         width: 152.49px;
         height: 346.82px;
         position: absolute;
         left: 44.7%;
         top: 25.6%;
         z-index: 1;
+
+        @media ($media-lg) {
+            left: 14%;
+            top: 37%;
+        }
+
+
+        @media ($media-md) {
+            left: 13%;
+            top: 35%;
+        }
+
+        @media ($media-sm) {
+            left: 12%;
+            top: 35%;
+        }
+
     }
 
     .bling {
         width: 445.82px;
         height: 402.37px;
+        z-index: -1;
 
         position: absolute;
         left: 34%;
         top: 27.8%;
+
+        @media ($media-lg) {
+            left: 14%;
+            top: 37%;
+        }
+
+
+        @media ($media-md) {
+            left: 13%;
+            top: 35%;
+        }
+
+        @media ($media-sm) {
+            left: 12%;
+            top: 35%;
+        }
+
     }
 
     .numbg {
-        width: 1127.82px;
-        height: 707.42px;
+        width: 78.3%;
+        height: 88.4;
+        z-index: -1;
 
         position: absolute;
         left: 11.3%;
-        top: 6.7%;
+        top: 8.7%;
+
+
+        @media ($media-lg) {
+            left: 14%;
+            top: 37%;
+        }
+
+
+        @media ($media-md) {
+            left: 13%;
+            top: 35%;
+        }
+
+        @media ($media-sm) {
+            left: 12%;
+            top: 35%;
+        }
 
     }
 
@@ -438,13 +619,15 @@ body {
 
 /*憑直覺抽一張吧*/
 #section-tarotcard {
+    border: #e22121 2px solid;
+
     // width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
     .tarotcard {
-        margin: 8.7% 5.57% 9% 5.6%;
+        // margin: 8.7% 10% 9% 10%;
 
         display: flex;
         flex-direction: column;
@@ -458,6 +641,8 @@ body {
             font-size: 24px;
             width: 344px;
             height: 42px;
+            margin-top: 70px;
+            margin-bottom: 60px;
 
             display: flex;
             justify-items: center;
@@ -511,7 +696,8 @@ body {
             width: 283px;
             height: 70px;
             // padding: 20px 100px;
-            // margin-bottom: 72.18px;
+            margin-top: 60px;
+            margin-bottom: 70px;
             display: flex;
             justify-content: center; //items or content
             align-items: center;
@@ -534,7 +720,7 @@ body {
 #custom {
     color: #fff;
     height: 87.5vh;
-    width:  100vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,6 +767,7 @@ body {
 
                 h2 {
                     font-size: 36px;
+                    font-style: italic;
                 }
 
                 h3 {
@@ -761,6 +948,10 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .en {
+                font-style: italic;
+            }
         }
 
         &::before {
@@ -820,18 +1011,20 @@ body {
                 width: 117px;
                 height: 78px;
                 padding: 0 24px 0 0;
-                border-right: 1px #FFF solid;
+                border-right: 1px #8750BF solid;
                 ;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                .crystal-enname {
+                .en {
                     font-size: 20px;
+                    font-style: italic;
+
                 }
 
-                .crystal-chname {
+                .ch {
                     font-size: 28px;
                 }
             }
@@ -865,7 +1058,7 @@ body {
                 width: 530px;
                 height: 30px;
                 padding: 0 0 8px 0;
-                border-bottom: 1px #FFF solid;
+                border-bottom: 1px #8750BF solid;
                 display: flex;
                 align-items: center;
             }
@@ -897,7 +1090,7 @@ body {
                 width: 530px;
                 height: 30px;
                 padding: 0 0 8px 0;
-                border-bottom: 1px #FFF solid;
+                border-bottom: 1px #8750BF solid;
                 display: flex;
                 align-items: center;
             }
@@ -937,8 +1130,8 @@ body {
                 gap: 12px;
 
                 .discovery-img {
-                    width: 36px;
-                    height: 36px;
+                    width: 45px;
+                    height: 45px;
                     border-radius: 50%;
                 }
             }
@@ -953,7 +1146,6 @@ body {
         width: 438px;
         height: 78px;
         margin: 100px auto 90px;
-        /* margin-top: 50 auto auto px; */
         display: flex;
         align-items: center;
 
@@ -975,6 +1167,8 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        @media ($media-lg) {}
 
         .feedback-arrowleft {
             width: 48px;
@@ -1063,100 +1257,112 @@ body {
     }
 }
 
-/*footer*/
-.footer {
-    border-radius: 60px 60px 0 0;
-    background-image: url('./public/image/footer背景.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // padding: 60px 20px 20px;
-    // margin-top: 60px;
+/* footer */
+footer {
+    // position:relative;
+    // background:#5348AA;
+    color: #fff;
+    // height: 277px;
 }
 
-.footer-content {
+/* 弧形區 */
+.footer-curve {
+    position: absolute;
+    /* 改絕對定位貼在 footer 頂端 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 146px;
+    overflow: hidden;
+    pointer-events: none;
+    /* 避免覆蓋到往上點擊的元素 */
+    transform: translateY(-99%);
+    /* 往上推一整個高度，蓋住 main 底部 */
+}
+
+.footer-curve svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #5348AA;
+    /* 確保路徑顏色跟 footer 相同 */
+}
+
+
+.footer_info {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    gap: 40px;
+    gap: 120px;
+    padding-bottom: 38px;
 }
 
-.footer-content div {
-    flex: 1 1 200px;
-    max-width: 300px;
-    text-align: left;
-    font-family: 'Noto Sans TC';
-    font-weight: 300;
-}
-
-
-
-.footer h3 {
-    color: white;
-    font-family: 'Noto Sans TC';
-    font-size: 16px;
+.footer_title {
+    font-size: 14px;
+    font-family: "Noto Sans TC";
     font-weight: 700;
-    margin-bottom: 15px;
+    line-height: 150%;
+    letter-spacing: 1.40px;
+    margin-bottom: 14px;
 }
 
-.footer ul li {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
+footer a,
+footer p {
     color: white;
     font-size: 14px;
+    font-family: "Noto Sans TC";
+    line-height: 150%;
+    letter-spacing: 1.40px;
 }
 
-.contact p {
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.social-icons {
+.social_icon {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
-
-.social-icons img {
-    width: 48px;
-    height: 48px;
-
-    // //hover要用JS寫// //
-    // .line {
-    //     &:hover {
-    //         content: url("../images/sns-line-state-hover.svg"); // 換圖片
-    //     }
-    // }
-
-    // .ig {
-    //     &:hover {
-    //         content: url("../images/sns-ig-state-hover.svg"); // 換圖片
-    //     }
-    // }
-
-    // .fb {
-    //     &:hover {
-    //         content: url("../images/sns-fb-state-hover.svg"); // 換圖片
-    //     }
-    // }
-}
-
-/* 版權 */
-.copyright {
-    font-family: 'Noto Sans TC';
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social_icon a {
+    width: 40px;
     height: 40px;
+    transition: 0.35s;
+    background-size: contain;
+}
+
+.icon-line {
+    background-image: url(../images/sns-line-state-default.svg);
+}
+
+.icon-ig {
+    background-image: url(../images/sns-line-state-default.svg);
+}
+
+.icon-fb {
+    background-image: url(../images/sns-line-state-default.svg);
+}
+
+.icon-line:hover {
+    background-image: url(../images/sns-line-state-hover.svg);
+}
+
+.icon-ig:hover {
+    background-image: url(../images/sns-line-state-hover.svg);
+}
+
+.icon-fb:hover {
+    background-image: url(../images/sns-line-state-hover.svg);
+}
+
+.footer_bottom {
+    height: 70px;
+    text-align: center;
+
     font-size: 14px;
-    color: white;
-    margin-top: 40px;
+    font-family: "Noto Sans TC";
+    line-height: 21px;
+    letter-spacing: 1.40px;
+}
+
+.footer_bottom hr {
+    width: 100%;
+    color: #D9D9D9;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 25px;
 }
