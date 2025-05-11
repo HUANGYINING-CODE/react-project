@@ -375,21 +375,24 @@ body {
     background: transparent;
 }
 
+
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 120px;
+    flex-wrap: wrap;
 }
 
 .footer-content>div {
-    flex: 1 1 200px;
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
     text-align: left;
     font-family: 'Noto Sans TC';
     font-weight: 300;
 }
-
 .footer h3 {
     color: white;
     font-family: 'Noto Sans TC';
