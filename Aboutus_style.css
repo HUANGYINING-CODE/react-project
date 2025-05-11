@@ -198,38 +198,40 @@ body *:lang(en) {
 /* --------- Hero --------- */
 .hero {
     position: relative;
+    background-color: #5348AA;
     min-height: 800px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
+    align-items: center;
     text-align: center;
     z-index: 1;
     overflow: hidden;
 }
 
-.hero-arc-background {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 800px;
-    background: url('./public/image/background-dark1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-bottom-left-radius: 100% 70%;
-    border-bottom-right-radius: 100% 70%;
-    z-index: 1;
-}
-
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: white;
-    margin-top: -100px;
     max-width: 700px;
+    padding-bottom: 100px;
 }
 
+.hero-arc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-arc svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 .hero-title {
     font-family: 'Lora', 'Georgia', serif;
@@ -255,6 +257,10 @@ body *:lang(en) {
 }
 
 /* --------- Section 左右排版 --------- */
+.main-content {
+    margin-top: -80px;
+}
+
 .beauty-spirituality .content,
 .quality-guarantee .content {
     display: flex;
@@ -444,44 +450,121 @@ body *:lang(en) {
 
 
 /* --------- RWD --------- */
-@media (max-width: 768px) {
+/* ========== 平板（1024px 以下） ========== */
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        padding: 0 24px;
+    }
+
     .content {
         flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 40px 20px;
+        padding: 60px 40px;
     }
 
-    .text,
-    .image {
-        flex: none;
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .text-content .title {
-        font-size: 22px;
+    .text-content {
+        text-align: center;
+        margin: 0 auto;
     }
 
     .text-content p,
     .text-content ul {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.6rem;
+        font-weight: 360;
+    }
+
+    .image {
+        flex: 1 1 250px;
     }
 
     .footer-content {
-        flex-direction: column;
-        align-items: center;
+        gap: 60px;
+        margin: auto 100px;
     }
 
     .footer-content>div {
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+
+/* ==========大手機或平板橫向（820px 以下） ========== */
+@media screen and (max-width: 820px) {
+    .hero-title {
+        font-size: 40px;
     }
 
-    .footer h3,
-    .footer ul li a,
-    .contact p {
+    .hero-subtitle {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        padding: 0 20px;
+        max-width: 650px;
+    }
+
+    .nav ul {
+        gap: 12px;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .image img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+
+/* ========== 手機直向（640px 以下） ========== */
+@media screen and (max-width: 640px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        max-width: 440px;
+    }
+
+    .header {
+        padding: 12px 20px;
+    }
+
+    .text-content .line {
+        max-width: 410px;
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-content {
         text-align: center;
+        margin: 0 auto;
     }
 }
