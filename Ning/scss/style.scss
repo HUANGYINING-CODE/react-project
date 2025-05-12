@@ -108,9 +108,6 @@ body {
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-
-    // line-height: $line-h-l;
-    // color: $color-black;
 }
 
 /* 重置標題 */
@@ -158,154 +155,141 @@ body {
 }
 
 body {
+    background-color: #484351;
+    border: #fff 5px solid;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // width: 100%;
     // width: 1440px;
     // height: 4755px;
     // border: 5px #FFF solid;
     position: relative;
 
-    .bgdark1 {
-        background-image: url(../../public/image/cover\ bg1.svg);
+    // .bgdark1 {
+    //     background-image: url(../../public/image/cover\ bg1.svg);
 
-        // @media ($media-lg){
-        //     background-repeat: no-repeat;
-        //     width: 100%;
-        //     height: 300vh;
-        //     position: absolute;
-        //     top: 0%;
-        //     left: 0%;
-        //     z-index: -1;
-        //     background-size: cover;
-        //     background-position: center; 
-        // }
-        // @media ($media-md){
-        //     background-repeat: no-repeat;
-        //     width: 100%;
-        //     height: 300vh;
-        //     position: absolute;
-        //     top: 0%;
-        //     left: 0%;
-        //     z-index: -1;
-        //     background-size: cover;
-        //     background-position: center; 
-        // }
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 300vh;
+    //     position: absolute;
+    //     top: 0%;
+    //     left: 0%;
+    //     z-index: -1;
+    //     background-size: cover;
+    //     background-position: center;
 
-        // background-image: url(../../public/image/cover\ bg1.svg);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 300vh;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
-
-        @media ($media-lg) {
-            // width: 299px;
-            // height: 587px;
-        }
+    //     @media ($media-lg) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
 
 
-        @media ($media-md) {
-            // width: 299px;
-            // height: 587px;
-        }
+    //     @media ($media-md) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
 
-        @media ($media-sm) {
-            // width: 299px;
-            // height: 587px;
-        }
+    //     @media ($media-sm) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
 
-    }
+    // }
 
-    .bgdark2 {
-        background-image: url(../../public/image/cover\ bg2.svg);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 36.5%;
-        position: absolute;
-        top: 63.6%;
-        left: 0;
-        z-index: -1;
+    // .bgdark2 {
+    //     background-image: url(../../public/image/cover\ bg2.svg);
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 36.5%;
+    //     position: absolute;
+    //     top: 63.6%;
+    //     left: 0;
+    //     z-index: -1;
 
-        background-position: center;
-        background-size: cover;
+    //     background-position: center;
+    //     background-size: cover;
 
-        @media ($media-lg) {
-            // width: 299px;
-            // height: 587px;
-        }
+    //     @media ($media-lg) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
 
 
-        @media ($media-md) {
-            // width: 299px;
-            // height: 587px;
-        }
+    //     @media ($media-md) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
 
-        @media ($media-sm) {
-            // width: 299px;
-            // height: 587px;
-        }
-    }
+    //     @media ($media-sm) {
+    //         // width: 299px;
+    //         // height: 587px;
+    //     }
+    // }
 
-    // background-color: #000;
+
 }
 
 /*menu bar*/
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 50px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
-    backdrop-filter: blur(1px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
+// .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 18px 50px;
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
+//     backdrop-filter: blur(1px);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: 1000;
+// }
 
-.logo img {
-    width: 180px;
-}
+// .logo img {
+//     width: 180px;
+// }
 
-.nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+// .nav ul {
+//     display: flex;
+//     align-items: center;
+//     gap: 20px;
+// }
 
-.nav ul li a img {
-    width: 30px;
-    height: 30px;
-}
+// .nav ul li a img {
+//     width: 30px;
+//     height: 30px;
+// }
 
-.background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('./public/image/背景材質.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    z-index: 2;
-    pointer-events: none;
-}
+// .background-overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-image: url('./public/image/背景材質.png');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: repeat;
+//     z-index: 2;
+//     pointer-events: none;
+// }
 
 /*封面1*/
 .ch-cover {
+    border: #e22121 2px solid;
     width: 100%;
     height: 100vh;
     position: relative;
+
+    @media ($media-md) {
+        width: 100%;
+    }
 
     .cover-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: #FFF 2px solid;
 
         .deco1 {
             width: 53px;
@@ -487,6 +471,7 @@ body {
 /*封面2*/
 .section-starttest {
     border: #e22121 2px solid;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -520,6 +505,7 @@ body {
             @media ($media-lg) {
                 width: 299px;
                 height: 587px;
+                // ipad Pro 1024*1366沒套到
             }
 
 
@@ -565,7 +551,7 @@ body {
         gap: 22.2px;
 
         @media ($media-lg) {
-           gap: 22.2px;
+            gap: 22.2px;
         }
 
 
@@ -678,7 +664,7 @@ body {
 #section-tarotcard {
     border: #e22121 2px solid;
 
-    // width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -764,14 +750,44 @@ body {
             .cardchild-1 {
                 width: 280px;
                 height: 455px;
-
                 margin-left: 0;
+
+                @media ($media-lg) {
+                    width: 225px;
+                    height: 455px;
+                }
+
+                @media ($media-md) {
+                    width: 220px;
+                    height: 455px;
+                }
+
+                @media ($media-sm) {
+                    width: 280px;
+                    height: 455px;
+                }
             }
 
             .card {
                 width: 280px;
                 height: 455px;
                 margin-left: -110px;
+
+                @media ($media-lg) {
+                    width: 225px;
+                    height: 455px;
+                }
+
+                @media ($media-md) {
+                    //ipad mini 1024*768 抓不到
+                    width: 220px;
+                    height: 455px;
+                }
+
+                @media ($media-sm) {
+                    width: 280px;
+                    height: 455px;
+                }
 
             }
 
@@ -815,6 +831,20 @@ body {
     background-position: center; //圖片置中
     background-repeat: no-repeat; //不重複
 
+    @media ($media-lg) {
+        width: 100%;
+    }
+
+
+    @media ($media-md) {
+        width: 100%;
+
+    }
+
+    @media ($media-sm) {
+        width: 100%;
+    }
+
     #title-all {
         display: flex;
         flex-direction: column;
@@ -822,25 +852,13 @@ body {
         align-items: center;
 
         .custom-title {
-            width: 783px;
+            width: 768px;
             height: 121px;
             margin: 54px auto 34px;
             margin-top: 54 auto auto px;
             display: flex;
+            justify-content: center;
             align-items: center;
-
-            // &::before {  //做出來怪怪的
-            //     content: "";
-            //     display: block;
-            //     background-image: url(../images/deco-diamond.svg);
-            //     background-repeat: no-repeat;
-            //     width: 34px;
-            //     height: 60px;
-            //     transform: rotate(-45deg);
-            //     margin: 0 40px 0 0;
-            //     padding: 10 10;
-
-            // }
 
             #custom-titlebox {
                 width: 620px;
@@ -851,7 +869,7 @@ body {
                 align-items: center;
 
                 @media ($media-lg) {
-                    width: 620px;
+                    width: 540px;
                     height: 121px;
                 }
 
@@ -884,9 +902,9 @@ body {
         height: 60px;
         margin: 0 40px 0 0;
 
-        @media ($media-lg) {
-            margin: 0 40px 0 0;
-        }
+        // @media ($media-lg) {
+        //     margin: 0 40px 0 0;
+        // }
 
 
         @media ($media-md) {
@@ -904,9 +922,9 @@ body {
         height: 60px;
         margin: 0 0 0 40px;
 
-        @media ($media-lg) {
-            margin: 0 0 0 40px;
-        }
+        // // @media ($media-lg) {
+        //     margin: 0 0 0 40px;
+        // }
 
 
         @media ($media-md) {
@@ -1388,111 +1406,111 @@ body {
 }
 
 /* footer */
-footer {
-    // position:relative;
-    // background:#5348AA;
-    color: #fff;
-    // height: 277px;
-}
+// footer {
+//     // position:relative;
+//     // background:#5348AA;
+//     color: #fff;
+//     // height: 277px;
+// }
 
-/* 弧形區 */
-.footer-curve {
-    position: absolute;
-    /* 改絕對定位貼在 footer 頂端 */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 146px;
-    overflow: hidden;
-    pointer-events: none;
-    /* 避免覆蓋到往上點擊的元素 */
-    transform: translateY(-99%);
-    /* 往上推一整個高度，蓋住 main 底部 */
-}
+// /* 弧形區 */
+// .footer-curve {
+//     position: absolute;
+//     /* 改絕對定位貼在 footer 頂端 */
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 146px;
+//     overflow: hidden;
+//     pointer-events: none;
+//     /* 避免覆蓋到往上點擊的元素 */
+//     transform: translateY(-99%);
+//     /* 往上推一整個高度，蓋住 main 底部 */
+// }
 
-.footer-curve svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: #5348AA;
-    /* 確保路徑顏色跟 footer 相同 */
-}
+// .footer-curve svg {
+//     width: 100%;
+//     height: 100%;
+//     display: block;
+//     color: #5348AA;
+//     /* 確保路徑顏色跟 footer 相同 */
+// }
 
 
-.footer_info {
-    display: flex;
-    justify-content: center;
-    gap: 120px;
-    padding-bottom: 38px;
-}
+// .footer_info {
+//     display: flex;
+//     justify-content: center;
+//     gap: 120px;
+//     padding-bottom: 38px;
+// }
 
-.footer_title {
-    font-size: 14px;
-    font-family: "Noto Sans TC";
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 1.40px;
-    margin-bottom: 14px;
-}
+// .footer_title {
+//     font-size: 14px;
+//     font-family: "Noto Sans TC";
+//     font-weight: 700;
+//     line-height: 150%;
+//     letter-spacing: 1.40px;
+//     margin-bottom: 14px;
+// }
 
-footer a,
-footer p {
-    color: white;
-    font-size: 14px;
-    font-family: "Noto Sans TC";
-    line-height: 150%;
-    letter-spacing: 1.40px;
-}
+// footer a,
+// footer p {
+//     color: white;
+//     font-size: 14px;
+//     font-family: "Noto Sans TC";
+//     line-height: 150%;
+//     letter-spacing: 1.40px;
+// }
 
-.social_icon {
-    display: flex;
-    gap: 10px;
-}
+// .social_icon {
+//     display: flex;
+//     gap: 10px;
+// }
 
-.social_icon a {
-    width: 40px;
-    height: 40px;
-    transition: 0.35s;
-    background-size: contain;
-}
+// .social_icon a {
+//     width: 40px;
+//     height: 40px;
+//     transition: 0.35s;
+//     background-size: contain;
+// }
 
-.icon-line {
-    background-image: url(../images/sns-line-state-default.svg);
-}
+// .icon-line {
+//     background-image: url(../images/sns-line-state-default.svg);
+// }
 
-.icon-ig {
-    background-image: url(../images/sns-line-state-default.svg);
-}
+// .icon-ig {
+//     background-image: url(../images/sns-line-state-default.svg);
+// }
 
-.icon-fb {
-    background-image: url(../images/sns-line-state-default.svg);
-}
+// .icon-fb {
+//     background-image: url(../images/sns-line-state-default.svg);
+// }
 
-.icon-line:hover {
-    background-image: url(../images/sns-line-state-hover.svg);
-}
+// .icon-line:hover {
+//     background-image: url(../images/sns-line-state-hover.svg);
+// }
 
-.icon-ig:hover {
-    background-image: url(../images/sns-line-state-hover.svg);
-}
+// .icon-ig:hover {
+//     background-image: url(../images/sns-line-state-hover.svg);
+// }
 
-.icon-fb:hover {
-    background-image: url(../images/sns-line-state-hover.svg);
-}
+// .icon-fb:hover {
+//     background-image: url(../images/sns-line-state-hover.svg);
+// }
 
-.footer_bottom {
-    height: 70px;
-    text-align: center;
+// .footer_bottom {
+//     height: 70px;
+//     text-align: center;
 
-    font-size: 14px;
-    font-family: "Noto Sans TC";
-    line-height: 21px;
-    letter-spacing: 1.40px;
-}
+//     font-size: 14px;
+//     font-family: "Noto Sans TC";
+//     line-height: 21px;
+//     letter-spacing: 1.40px;
+// }
 
-.footer_bottom hr {
-    width: 100%;
-    color: #D9D9D9;
-    border: 1px solid #FFFFFF;
-    margin-bottom: 25px;
-}
+// .footer_bottom hr {
+//     width: 100%;
+//     color: #D9D9D9;
+//     border: 1px solid #FFFFFF;
+//     margin-bottom: 25px;
+// }
