@@ -166,7 +166,6 @@ body .bgdark2 {
   background-position: center;
   background-size: cover;
 }
-
 /*menu bar*/
 .header {
   display: flex;
@@ -399,6 +398,21 @@ body .bgdark2 {
   align-items: center;
   position: relative;
 }
+@media ((max-width:1024px)) {
+  .section-starttest {
+    justify-content: center;
+  }
+}
+@media ((max-width:820px)) {
+  .section-starttest {
+    justify-content: center;
+  }
+}
+@media ((max-width:640px)) {
+  .section-starttest {
+    justify-content: center;
+  }
+}
 .section-starttest .startbox1 {
   display: flex;
   justify-content: center;
@@ -411,13 +425,13 @@ body .bgdark2 {
 }
 @media ((max-width:1024px)) {
   .section-starttest .startbox1 .left {
-    width: 20.7vw;
-    height: 73.3vh;
+    width: 299px;
+    height: 587px;
   }
 }
 @media ((max-width:820px)) {
   .section-starttest .startbox1 .left {
-    width: 299px;
+    width: 230px;
     height: 587px;
   }
 }
@@ -439,7 +453,7 @@ body .bgdark2 {
 }
 @media ((max-width:820px)) {
   .section-starttest .startbox1 .right {
-    width: 299px;
+    width: 230px;
     height: 587px;
   }
 }
@@ -455,6 +469,21 @@ body .bgdark2 {
   justify-items: center;
   align-items: center;
   gap: 22.2px;
+}
+@media ((max-width:1024px)) {
+  .section-starttest .startbox2 {
+    gap: 22.2px;
+  }
+}
+@media ((max-width:820px)) {
+  .section-starttest .startbox2 {
+    gap: 22.2px;
+  }
+}
+@media ((max-width:640px)) {
+  .section-starttest .startbox2 {
+    gap: 22.2px;
+  }
 }
 .section-starttest .startbox2 p {
   color: #FFF;
@@ -475,14 +504,14 @@ body .bgdark2 {
 }
 @media ((max-width:1024px)) {
   .section-starttest .startbtn a {
-    left: 14%;
-    top: 37%;
+    left: 42%;
+    top: 36%;
   }
 }
 @media ((max-width:820px)) {
   .section-starttest .startbtn a {
-    left: 13%;
-    top: 35%;
+    left: 40.5%;
+    top: 32.5%;
   }
 }
 @media ((max-width:640px)) {
@@ -501,14 +530,14 @@ body .bgdark2 {
 }
 @media ((max-width:1024px)) {
   .section-starttest .bling {
-    left: 14%;
-    top: 37%;
+    left: 27%;
+    top: 38%;
   }
 }
 @media ((max-width:820px)) {
   .section-starttest .bling {
-    left: 13%;
-    top: 35%;
+    left: 23%;
+    top: 28%;
   }
 }
 @media ((max-width:640px)) {
@@ -527,14 +556,14 @@ body .bgdark2 {
 }
 @media ((max-width:1024px)) {
   .section-starttest .numbg {
-    left: 14%;
-    top: 37%;
+    left: 11%;
+    top: 34%;
   }
 }
 @media ((max-width:820px)) {
   .section-starttest .numbg {
-    left: 13%;
-    top: 35%;
+    left: 10%;
+    top: 31%;
   }
 }
 @media ((max-width:640px)) {
@@ -551,6 +580,21 @@ body .bgdark2 {
   display: flex;
   flex-direction: column;
 }
+@media ((max-width:1024px)) {
+  #section-tarotcard {
+    justify-content: center;
+  }
+}
+@media ((max-width:820px)) {
+  #section-tarotcard {
+    justify-content: center;
+  }
+}
+@media ((max-width:640px)) {
+  #section-tarotcard {
+    justify-content: center;
+  }
+}
 #section-tarotcard .tarotcard {
   display: flex;
   flex-direction: column;
@@ -563,8 +607,8 @@ body .bgdark2 {
   font-size: 24px;
   width: 344px;
   height: 42px;
-  margin-top: 70px;
-  margin-bottom: 60px;
+  margin-top: 8.7vh;
+  margin-bottom: 7.5vh;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -655,6 +699,24 @@ body .bgdark2 {
   justify-content: center;
   align-items: center;
 }
+@media ((max-width:1024px)) {
+  #custom #title-all .custom-title #custom-titlebox {
+    width: 620px;
+    height: 121px;
+  }
+}
+@media ((max-width:820px)) {
+  #custom #title-all .custom-title #custom-titlebox {
+    width: 620px;
+    height: 121px;
+  }
+}
+@media ((max-width:640px)) {
+  #custom #title-all .custom-title #custom-titlebox {
+    width: 620px;
+    height: 121px;
+  }
+}
 #custom #title-all .custom-title #custom-titlebox h2 {
   font-size: 36px;
   font-style: italic;
@@ -667,10 +729,40 @@ body .bgdark2 {
   height: 60px;
   margin: 0 40px 0 0;
 }
+@media ((max-width:1024px)) {
+  #custom .dimond-left {
+    margin: 0 40px 0 0;
+  }
+}
+@media ((max-width:820px)) {
+  #custom .dimond-left {
+    margin: 0 20px 0 0;
+  }
+}
+@media ((max-width:640px)) {
+  #custom .dimond-left {
+    margin: 0 40px 0 0;
+  }
+}
 #custom .dimond-right {
   width: 34px;
   height: 60px;
   margin: 0 0 0 40px;
+}
+@media ((max-width:1024px)) {
+  #custom .dimond-right {
+    margin: 0 0 0 40px;
+  }
+}
+@media ((max-width:820px)) {
+  #custom .dimond-right {
+    margin: 0 0 0 20px;
+  }
+}
+@media ((max-width:640px)) {
+  #custom .dimond-right {
+    margin: 0 0 0 40px;
+  }
 }
 #custom button {
   width: 264px;
