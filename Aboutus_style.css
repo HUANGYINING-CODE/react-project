@@ -187,7 +187,7 @@ body *:lang(en) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/image/背景材質.png');
+    background-image: url('./public/image/bg-texture.png');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -344,7 +344,7 @@ body *:lang(en) {
 /* Footer */
 .footer {
     border-radius: 60px 60px 0 0;
-    background-image: url('./public/image/footer背景.png');
+    background-image: url('./public/image/footer-bg-dark.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -367,7 +367,7 @@ body *:lang(en) {
     width: auto;
     text-align: left;
     font-family: 'Noto Sans TC';
-    font-weight: 300;
+    font-weight: 360;
 }
 
 
@@ -390,6 +390,28 @@ body *:lang(en) {
     font-size: 14px;
 }
 
+.footer a:not(:has(img)) {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding-bottom: 2px;
+  }
+  
+  .footer a:not(:has(img))::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #f3dbff;
+    transition: width 0.3s ease;
+  }
+  
+  .footer a:not(:has(img)):hover::after {
+    width: 100%;
+  }
+
 .contact p {
     color: white;
     font-size: 14px;
@@ -410,28 +432,28 @@ body *:lang(en) {
 
 /* 預設圖 */
 .social-icons a:nth-child(1) img {
-    content: url('./public/image/icon/sns-line-state-default.svg');
+    content: url('./public/image/icon-deco/icon_line.svg');
 }
 
 .social-icons a:nth-child(2) img {
-    content: url('./public/image/icon/sns-ig-state-default.svg');
+    content: url('./public/image/icon-deco/icon_ig.svg');
 }
 
 .social-icons a:nth-child(3) img {
-    content: url('./public/image/icon/sns-fb-state-default.svg');
+    content: url('./public/image/icon-deco/icon_fb.svg');
 }
 
 /* hover */
 .social-icons a:nth-child(1):hover img {
-    content: url('./public/image/icon/sns-line-state-hover.svg');
+    content: url('./public/image/icon-deco/icon_line_h.svg');
 }
 
 .social-icons a:nth-child(2):hover img {
-    content: url('./public/image/icon/sns-ig-state-hover.svg');
+    content: url('./public/image/icon-deco/icon_ig_h.svg');
 }
 
 .social-icons a:nth-child(3):hover img {
-    content: url('./public/image/icon/sns-fb-state-hover.svg');
+    content: url('./public/image/icon-deco/icon_fb_h.svg');
 }
 
 
