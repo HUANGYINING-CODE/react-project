@@ -147,10 +147,11 @@ body *:lang(en) {
     letter-spacing: 2px;
 }
 
+/* footer */
 
 .footer {
     border-radius: 60px 60px 0 0;
-    background-image: url('./public/image/footer-backgroung-dark.png');
+    background-image: url('./public/image/footer-bg-dark.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -173,7 +174,7 @@ body *:lang(en) {
     width: auto;
     text-align: left;
     font-family: 'Noto Sans TC';
-    font-weight: 300;
+    font-weight: 360;
 }
 
 
@@ -195,6 +196,28 @@ body *:lang(en) {
     color: white;
     font-size: 14px;
 }
+
+.footer a:not(:has(img)) {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding-bottom: 2px;
+  }
+  
+  .footer a:not(:has(img))::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #f3dbff;
+    transition: width 0.3s ease;
+  }
+  
+  .footer a:not(:has(img)):hover::after {
+    width: 100%;
+  }
 
 .contact p {
     color: white;

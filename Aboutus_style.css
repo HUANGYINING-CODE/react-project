@@ -187,7 +187,7 @@ body *:lang(en) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/image/背景材質.png');
+    background-image: url('./public/image/bg-texture.png');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -344,7 +344,7 @@ body *:lang(en) {
 /* Footer */
 .footer {
     border-radius: 60px 60px 0 0;
-    background-image: url('./public/image/footer背景.png');
+    background-image: url('./public/image/footer-bg-dark.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
