@@ -36,6 +36,7 @@ body {
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
     line-height: 1.5;
+    /* color: var(--color-black); */
 }
 
 /* 重置標題 */
@@ -57,6 +58,8 @@ img {
 /* 重置連接 */
 a {
     display: block;
+    /*a預設的行內元素，不支援寬高及上下間距，通常會改為區塊，方便設定*/
+    /* color: var(--color-deep); */
     text-decoration: none;
 }
 
@@ -111,7 +114,7 @@ a {
 
 /* 主要內容區 */
 .cart_page{
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     width: 100%;
     height: 1255px;
     display: flex;
@@ -120,6 +123,40 @@ a {
 
     padding-top: 80px;
     gap: 50px;
+
+    background:
+        /* 材質圖 */
+        url(../images/背景材質.png),
+
+        /* 左 */
+        radial-gradient(circle 48.76vw at 5% 85%,
+            rgba(162, 141, 255, 0.45) 0%,
+            rgba(162, 141, 255, 0.09) 50.96%,
+            rgba(162, 141, 255, 0.00) 100%),
+
+        /* 上右 */
+        radial-gradient(circle 48.76vw at 68% -15%,
+            rgba(162, 141, 255, 0.45) 0%,
+            rgba(162, 141, 255, 0.09) 50.96%,
+            rgba(162, 141, 255, 0.00) 100%),
+
+        /* 上左 */
+        radial-gradient(circle 62.43vw at 40% -45%,
+            rgba(255, 120, 158, 0.32) 22.12%,
+            rgba(255, 120, 158, 0.05) 60.1%,
+            rgba(255, 120, 158, 0.00) 100%),
+        
+        /* 右 */
+        radial-gradient(circle 62.43vw at 125% 90%,
+            rgba(255, 120, 158, 0.32) 22.12%,
+            rgba(255, 120, 158, 0.05) 60.1%,
+            rgba(255, 120, 158, 0.00) 100%);
+
+    background-color: #FFFFFF; /* 底色 */
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; /* 每層置中（光暈已用 at 定位不受影響） */
+    background-attachment: fixed;/* 捲動時位置固定 */
 }
 /* 標題 */
 #title{
@@ -495,7 +532,7 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
-    height: 146px;
+    height: 146px; /* 與 SVG viewBox 高度一致 */
     overflow: hidden;
     pointer-events: none; /* 避免覆蓋到往上點擊的元素 */
     transform: translateY(-99%); /* 往上推一整個高度，蓋住 main 底部 */
