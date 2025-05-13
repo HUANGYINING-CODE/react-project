@@ -8,6 +8,9 @@ body {
 /* 柔光暈背景 */
 body {
     background:
+        /* 材質圖 */
+        url(../images/background_noise_light.png),
+        
         /* 左上 */
         radial-gradient(circle 48.76vw at 0% 12%,
             rgba(255, 120, 158, 0.5) 0%,
