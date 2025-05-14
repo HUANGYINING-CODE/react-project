@@ -1,0 +1,43 @@
+/* 讓背景填滿整頁 */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* 柔光暈背景 */
+body {
+    background:
+        /* 材質圖 */
+        url(../images/background_noise_light.png),
+
+        /* 左 */
+        radial-gradient(circle 48.76vw at 5% 85%,
+            rgba(162, 141, 255, 0.45) 0%,
+            rgba(162, 141, 255, 0.09) 50.96%,
+            rgba(162, 141, 255, 0.00) 100%),
+
+        /* 上右 */
+        radial-gradient(circle 48.76vw at 68% -15%,
+            rgba(162, 141, 255, 0.45) 0%,
+            rgba(162, 141, 255, 0.09) 50.96%,
+            rgba(162, 141, 255, 0.00) 100%),
+
+        /* 上左 */
+        radial-gradient(circle 62.43vw at 40% -45%,
+            rgba(255, 120, 158, 0.32) 22.12%,
+            rgba(255, 120, 158, 0.05) 60.1%,
+            rgba(255, 120, 158, 0.00) 100%),
+        
+        /* 右 */
+        radial-gradient(circle 62.43vw at 125% 90%,
+            rgba(255, 120, 158, 0.32) 22.12%,
+            rgba(255, 120, 158, 0.05) 60.1%,
+            rgba(255, 120, 158, 0.00) 100%);
+
+    background-color: #FFFFFF; /* 底色 */
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; /* 每層置中（光暈已用 at 定位不受影響） */
+    background-attachment: fixed;/* 捲動時位置固定 */
+}
