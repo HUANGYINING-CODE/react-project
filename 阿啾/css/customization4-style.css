@@ -84,37 +84,6 @@ a {
 }
 
 
-/* 導覽列 */
-#navbar {
-    display: flex;  /* flex:橫排 */
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    /* 背景材質 */
-    background-image: 
-        linear-gradient(107deg, rgba(162, 105, 232, 0.95) -19.31%, rgba(66, 73, 212, 0.95) 169.85%),
-        var(--bg);
-}
-#navbar .logo {
-    width: 181px;
-    margin-left: 25px;
-}
-header ul {
-    display: flex;
-    align-items: flex-end;
-}
-#navbar .icon {
-    display: flex;
-    margin-right: 25px;
-}
-#navbar .icon a {
-    width: 34px;
-    height: 34px;
-    margin: 0 10px;
-    background-size: contain;
-    /* transition: .35s; */
-}
 
 
 
@@ -127,11 +96,7 @@ header ul {
     /* align-content: center; */
     justify-content: space-evenly;
     padding: 60px 80px 20px 80px;
-    gap: 80px;
-    /* 背景材質 */
-    background-image: 
-        linear-gradient(rgba(250, 242, 252, 0.95), rgba(250, 242, 252, 0.95)),
-        var(--bg);
+    gap: 20px;
 }
 .boxs, .boxs2 {
     display: flex;

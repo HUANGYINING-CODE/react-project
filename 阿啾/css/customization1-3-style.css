@@ -71,44 +71,13 @@ a {
 }
 
 
-/* 導覽列 */
-#navbar {
-    display: flex;  /* flex:橫排 */
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    /* 背景材質 */
-    background-image: 
-        linear-gradient(107deg, rgba(162, 105, 232, 0.95) -19.31%, rgba(66, 73, 212, 0.95) 169.85%),
-        var(--bg);
-}
-#navbar .logo {
-    width: 181px;
-    margin-left: 25px;
-}
-header ul {
-    display: flex;
-    align-items: flex-end;
-}
-#navbar .icon {
-    display: flex;
-    margin-right: 25px;
-}
-#navbar .icon a {
-    width: 34px;
-    height: 34px;
-    margin: 0 10px;
-    background-size: contain;
-    /* transition: .35s; */
-}
 
 /* 內容 */
 main p {
     font-size: 14px;
     letter-spacing: 1.4px;
     text-align: center;
-    margin: 15px 0 0;
+    margin: 3vh 0 0;
 }
 .text {
     color: var(--color-deep);
@@ -155,13 +124,10 @@ main p {
 }
 .index, .index2, .index3 {
     height: calc(100vh - 70px);
-    /* 背景材質 */
-    background-image: 
-        linear-gradient(rgba(250, 242, 252, 0.95), rgba(250, 242, 252, 0.95)),
-        var(--bg);
+    position: relative;
+    z-index: 0;
 }
 .index {
-    /* border: 3px solid #83000b; */
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -169,7 +135,6 @@ main p {
     gap: 50px;
 }
 .index2 {
-    /* height: 730px; */
     display: flex;
     justify-content: center;
     flex-direction: column;

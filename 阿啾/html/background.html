@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bead Selector</title>
+    <link rel="stylesheet" href="../css/background-light.css">
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <header id="navbar">
+        <a class="logo" href="#"><img src="../images/logotext_nav.ico.svg" alt=""></a>
+        <nav class="navigation">
+            <!-- icon btn -->
+            <ul class="icon">
+                <li><a class="icon-search" href="#"></a></li>
+                <li><a class="icon-cart" href="#"></a></li>
+                <li><a class="icon-member" href="#"></a></li>
+                <li><a class="icon-menu" href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main id="index">
+        <!-- 星星特效背景 -->
+        <div id="bg-container" aria-hidden="true"></div>
+        <!-- 紫色動畫背景 -->
+        <div class="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                            result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive"></div>
+            </div>
+        </div>
+    </main>
+    <!-- 躁點效果背景 -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <filter id="f">
+            <!-- 深色背景 -->
+            <!-- <feTurbulence type="fractalNoise" baseFrequency="10.8" numOctaves="20" stitchTiles="stitch" /> -->
+            <!-- 淺色背景 -->
+            <feTurbulence type="fractalNoise" baseFrequency="10.8" numOctaves="100" stitchTiles="stitch" />
+
+            <feColorMatrix type="saturate" values="0" />
+        </filter>
+    </svg>
+    <!-- 星星特效背景 js -->
+    <script src="../js/background-star.js"></script>
+
+</body>
+
+</html>
